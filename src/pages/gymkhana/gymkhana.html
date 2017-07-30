@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Gymkhana</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  
+  <span id="bloqueo" style="display:none">
+    <ion-input id="equipo" [(ngModel)]="todo.equipo" placeholder="Equipo" type="text"></ion-input>
+    <ion-input id="pass" [(ngModel)]="todo.pass" placeholder="Clave" type="text"></ion-input>
+    <button (click)="editar()" ion-button full>Confirmar datos</button>
+    <div id="dat" style="color:red;display:none">ERROR, el equipo y contraseña no son correctos.</div>
+  </span>
+  
+  <span id="lista" style="display:none">
+    <span id="cabecera"></span>
+    <div style="margin-top:10px">
+      <div style="float:left;width:50%;text-align:center">
+	<button style="" (click)="refrescar()" ion-button icon-only>
+	  <ion-icon name="refresh"></ion-icon>
+	</button>
+      </div>
+      <div style="float:left;width:50%;text-align:center">
+	<button ion-button icon-only>
+	  <ion-icon><img src="assets/images/pruebas/ranking.png" height="17px"/></ion-icon>
+	</button>
+      </div>
+    </div>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba1)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 1
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba2)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 2
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba3)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 3
+    </ion-item>
+  </span>
+</ion-content>

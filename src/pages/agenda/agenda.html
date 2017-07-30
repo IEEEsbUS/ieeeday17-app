@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Agenda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+  <ion-segment [(ngModel)]="agenda">
+    <ion-segment-button value="viernes">
+      Viernes
+    </ion-segment-button>
+    <ion-segment-button value="sabado">
+      Sábado
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+
+<div [ngSwitch]="agenda">
+  <ion-list *ngSwitchCase="'viernes'">
+    <ion-item (click)="showAlert(119)">
+      <div class="itemList">
+	<div class="itemLeft">
+	  <p>
+	    19:00
+	  </p>
+	</div>
+	<div class="itemRight">
+	  <p style="color:black">
+	    Reunión de capítulos técnicos
+	  </p>
+	</div>
+      </div>
+    </ion-item>
+      
+    <ion-item (click)="showAlert(120)">
+      <div class="itemList">
+	<div class="itemLeft">
+	  <p>
+	    20:00
+	  </p>
+	</div>
+	<div class="itemRight">
+	  <p style="color:black">
+	    Otra cosa
+	  </p>
+	</div>
+      </div>
+    </ion-item>
+
+
+    <ion-item>
+      <div class="itemList">
+	<div class="itemLeft">
+	  <p>
+	    21:00
+	  </p>
+	</div>
+	<div class="itemRight">
+	  <p style="color:black">
+	    FIESHTA
+	  </p>
+	</div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+
+      
+  <ion-list *ngSwitchCase="'sabado'">
+    <ion-item>
+      <div class="itemList">
+	<div class="itemLeft">
+	  <p>
+	    10:00
+	  </p>
+	</div>
+	<div class="itemRight">
+	  <p style="color:black">
+	    Desayuno
+	  </p>
+	</div>
+      </div>
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>

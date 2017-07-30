@@ -1,0 +1,51 @@
+page-premios {
+    h1{
+	text-align:center;
+    }
+    .texto{
+	max-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+    }
+    .texto p{
+	text-align:justify;
+    }
+    .ramas, .capitulo{
+	width:100%;
+	text-align:center;
+	overflow:hidden;
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+    }
+    .ramas > div{
+	padding:2%;
+	margin:1%;
+	width:48%;
+	float:left;
+	border-radius:5%;
+	background-color:rgba(214, 214, 214,0.3);
+	box-shadow: 0px 0px 5px #888888;
+    }
+
+    .capitulo > div{
+	padding:2%;
+	margin:1%;
+	width:48%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5%;
+	background-color:rgba(214, 214, 214,0.3);
+	box-shadow: 0px 0px 5px #888888;
+    }
+    
+    .ramas > div > span, .capitulo > div > span{
+	display:block;
+	text-align:center;
+    }
+    
+    .ramas > div img{
+	width:80%;
+	max-width:200px;
+    }
+}

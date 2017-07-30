@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Prueba 3</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div id="inicio" style="display:none">
+    <p>Ve a esta posición</p>
+    <button (click)="empezar()">Empezar desafío</button>
+  </div>
+  <div id="desafio" style="display:none">
+    <p id="descrReto"></p>
+    <ion-input id="respuesta" [(ngModel)]="respuesta" placeholder="Respuesta"></ion-input>
+    <button (click)="consulta()">Enviar respuesta</button>
+    <p id="error">Respuesta equivocada</p>
+  </div>
+  <div id="contenido" style="display:none">
+    <p id="correcto" style="color:green">Respuesta correcta</p>
+    <p>OTRA VISITA A OTRO LADO</p>
+  </div>
+</ion-content>

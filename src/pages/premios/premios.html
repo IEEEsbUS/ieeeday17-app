@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Premios 2017</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Premio a la mejor rama</h1>
+  <div class="texto">
+    <p>
+      La votación a mejor rama se realizó durante el SWYP 2017 en Granada donde, tras un empate a puntos, se decidió dar el premio a estas dos ramas.
+    </p>
+  </div>
+  <div class="ramas">
+    <div (click)="newBranch(sbUMH)">
+      <span><img src="assets/images/ramas/ieeeUMH.png"/></span>
+	Universidad Miguel Hernández
+    </div>
+    <div (click)="newBranch(sbUV)">
+      <span><img src="assets/images/ramas/ieeeUV.png"/></span>
+	Universidad de Valencia
+    </div>
+  </div>
+
+  <h1>Premio al mejor capítulo</h1>
+  <div class="texto">
+    <p>
+      La votación a mejor capítulo... No se cual es, hay que preguntar y rellenar
+    </p>
+  </div>
+  <div class="capitulo">
+    <div (click)="newChapter(aess)">
+      <span><img src="assets/images/capitulos/AESS.png"/></span>
+	AESS
+    </div>
+  </div>
+  <br/>
+
+</ion-content>

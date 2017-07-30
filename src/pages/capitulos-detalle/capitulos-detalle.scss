@@ -1,0 +1,45 @@
+page-capitulos-detalle {
+    h3{
+	text-align:center;
+	clear:both;
+    }
+    p{
+	clear:both;
+	text-align:justify;
+    }
+    
+    .logo{
+	margin:auto;
+	width:70%;
+	float:center;
+	max-width:400px;
+	background-color:white;
+	padding:3%;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.6);
+    }
+    
+    .logo img{
+	width:100%;
+	max-width:400px
+    }
+    
+    .ocultar{
+	display:none;
+    }
+    
+    .unaRed{
+	width:100%;
+    }
+
+    .web{
+	clear:both;
+	width:100%;
+	padding-top:20px;
+	padding-bottom:10px;
+    }
+    
+    .web span{
+	display:block;
+	text-align:center;
+    }
+}

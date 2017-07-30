@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="logo"><img src="{{imagen}}"/></div>
+  <p>{{ciudad}}</p>
+  <div class="redes">
+  <div [attr.class]="twitter!==undefined ? classTW : 'ocultar'"><span (click)="openURL(twitterURL)"><img src="assets/images/twitter-button.png" width="80px"/></span></div>
+  <div [attr.class]="facebook!==undefined ? classFB : 'ocultar'"><span style="color:red;" (click)="openURL(facebookURL)" align="center"><img src="assets/images/facebook-button.png" width="80px"/></span></div>
+  <div [attr.class]="instagram!==undefined ? classInsta : 'ocultar'"><span (click)="openURL(instagramURL)" align="center"><img src="assets/images/instagram-button.png" width="80px"/></span></div>
+  </div>
+  <div class="web">
+    <div [attr.class]="web!==undefined ? 'unaRed' : 'ocultar'"><span (click)="openURL(web)" align="center"><img src="assets/images/web.png" width="80px"/></span></div>
+  </div>
+</ion-content>
