@@ -15,22 +15,38 @@ import { RamasDetalle } from '../ramas-detalle/ramas-detalle';
   templateUrl: 'ramas-ieee.html',
 })
 export class RamasIEEE {
-  sbUAH={title:"Universidad de Alcalá",imagen:"assets/images/ramas/ieeeUAH.png",ciudad:"Alcalá de Henares",twitter:"IEEEsbUAH",facebook:"Rama-del-IEEE-de-la-Universidad-de-Alcalá-262372793821166/",web:"http://www.ieeeuah.org"};
-  sbUA={title:"Universidad de Alicante",imagen:"assets/images/ramas/ieeeUA.png",ciudad:"Alicante",twitter:"ieee_sbua",facebook:"ieeeuasb",web:"http://sites.ieee.org/sb-alicante/es/inicio/"};
-  sbUC3M={title:"U. Carlos III de Madrid",imagen:"assets/images/ramas/ieeeUC3M.png",ciudad:"Madrid",twitter:"asrob_uc3m",facebook:"asrobuc3m",web:"http://asrob.uc3m.es/index.php/Main_Page"};
-  sbUGR={title:"Universidad de Granada",imagen:"assets/images/ramas/ieeeUGR.png",ciudad:"Granada",twitter:"ieeegranada",facebook:"IEEEGranada",web:"http://sites.ieee.org/sb-ugr/"};
-  sbUMA={title:"Universidad de Málaga",imagen:"assets/images/ramas/ieeeUMA.png",ciudad:"Málaga",web:"http://ieee.etsit.uma.es/",twitter:"ieeesbuma",facebook:"IeeeSbUma"};
-  sbUMH={title:"Universidad Miguel Hernández",imagen:"assets/images/ramas/ieeeUMH.png",ciudad:"Elche",twitter:"ieeesbumh",facebook:"ieeesbumh",instagram:"ieeesbumh",web:"http://umh.ieeespain.org/"};
-  sbUPCT={title:"U. P. Cartagena",imagen:"assets/images/ramas/ieeeUPCT.png",ciudad:"Cartagena",twitter:"ieeesupct",facebook:"ieeeupct",instagram:"ieeeupct",web:"http://www.ieee.upct.es/"};
-  sbBCN={title:"U.P. de Cataluña",imagen:"assets/images/ramas/ieeeUBCN.png",ciudad:"Barcelona",twitter:"IEEE_SB_BCN",facebook:"IEEEBcnStudentBranch",web:"http://ieee.upc.edu/"};
-  sbUPMN={title:"U. P. Madrid",imagen:"assets/images/ramas/ieeeUPM.png",ciudad:"Madrid",twitter:"ieeesb",facebook:"IeeeSbMadrid",web:"http://ieeesb.es"};
-  sbUPMS={title:"U. P. Madrid Sur",imagen:"assets/images/ramas/ieeeUPMSUR.png",ciudad:"Madrid",twitter:"aetel",facebook:"aetel.etsist",web:"http://aetel.etsist.upm.es/"};
-  sbUPV={title:"U.P. Valencia",imagen:"assets/images/ramas/ieeeUPV.png",ciudad:"Valencia",facebook:"ieeeupv"};
-  sbURJC={title:"Universidad Rey Juan Carlos",imagen:"assets/images/ramas/ieeeURJC.png",ciudad:"Madrid",twitter:"ieee_urjc_sb",facebook:"IEEE-URJC-Student-Branch-115794485163092",web:"https://ieeesb.etsit.urjc.es/"};
-  sbUS={title:"Universidad de Sevilla",imagen:"assets/images/ramas/ieeeUS.png",ciudad:"Sevilla",twitter:"ieeesbus",facebook:"IEEESBUS",web:"http://sites.ieee.org/sb-us/"};
-  sbUV={title:"Universidad de Valencia",imagen:"assets/images/ramas/ieeeUV.png",ciudad:"Valencia",twitter:"ieeesbuv",facebook:"IEEEsbUV",web:"http://ieee.uv.es/index"};
-  sbUVigo={title:"Universidad de Vigo",imagen:"assets/images/ramas/ieeeUVigo.png",ciudad:"Vigo",twitter:"IEEEuVigo",facebook:"ieeevigo"};
-  sbUZ={title:"Universidad de Zaragoza",imagen:"assets/images/ramas/ieeeUZ.png",ciudad:"Zaragoza",twitter:"ieeesbuz",facebook:"IEEEsbUZ",web:"http://sites.ieee.org/sb-unizar/"};
+  sbUAH={title:"UAH",imagen:"assets/images/ramas/ieeeUAH.png",ciudad:"Universidad de Alcalá",twitter:"IEEEsbUAH",facebook:"Rama-del-IEEE-de-la-Universidad-de-Alcalá-262372793821166/",web:"http://www.ieeeuah.org"};
+  
+  sbUA={title:"UA",imagen:"assets/images/ramas/ieeeUA.png",ciudad:"Universidad de Alicante",twitter:"ieee_sbua",facebook:"ieeeuasb",web:"http://sites.ieee.org/sb-alicante/es/inicio/"};
+  
+  sbUC3M={title:"UC3M",imagen:"assets/images/ramas/ieeeUC3M.png",ciudad:"Universidad Carlos III de Madrid",twitter:"asrob_uc3m",facebook:"asrobuc3m",web:"http://asrob.uc3m.es/index.php/Main_Page"};
+  
+  sbUGR={title:"UGR",imagen:"assets/images/ramas/ieeeUGR.png",ciudad:"Universidad de Granada",twitter:"ieeegranada",facebook:"IEEEGranada",web:"http://sites.ieee.org/sb-ugr/"};
+  
+  sbUMA={title:"UMA",imagen:"assets/images/ramas/ieeeUMA.png",ciudad:"Universidad de Málaga",web:"http://ieee.etsit.uma.es/",twitter:"ieeesbuma",facebook:"IeeeSbUma"};
+  
+  sbUMH={title:"UMH",imagen:"assets/images/ramas/ieeeUMH.png",ciudad:"Universidad Miguel Hernández",twitter:"ieeesbumh",facebook:"ieeesbumh",instagram:"ieeesbumh",web:"http://umh.ieeespain.org/"};
+  sbUNED={title:"UNED",imagen:"assets/images/ramas/ieeeUNED.png",ciudad:"Universidad Nacional de Educación a Distancia",facebook:"IEEEsbUNED",web:"http://sites.ieee.org/sb-uned/"};
+  
+  sbUPCT={title:"UPCT",imagen:"assets/images/ramas/ieeeUPCT.png",ciudad:"Universidad Politécnica de Cartagena",twitter:"ieeesupct",facebook:"ieeeupct",instagram:"ieeeupct",web:"http://www.ieee.upct.es/"};
+  
+  sbBCN={title:"UPC",imagen:"assets/images/ramas/ieeeUBCN.png",ciudad:"Universidad Politécnica de Cataluña",twitter:"IEEE_SB_BCN",facebook:"IEEEBcnStudentBranch",web:"http://ieee.upc.edu/"};
+  
+  sbUPMN={title:"UPM",imagen:"assets/images/ramas/ieeeUPM.png",ciudad:"Universidad Politécnica de Madrid",twitter:"ieeesb",facebook:"IeeeSbMadrid",web:"http://ieeesb.es"};
+  
+  sbUPMS={title:"UPM SUR",imagen:"assets/images/ramas/ieeeUPMSUR.png",ciudad:"Universidad Politécnica de Madrid Sur",twitter:"aetel",facebook:"aetel.etsist",web:"http://aetel.etsist.upm.es/"};
+  
+  sbUPV={title:"UPV",imagen:"assets/images/ramas/ieeeUPV.png",ciudad:"Universidad Politécnica de Valencia",facebook:"ieeeupv"};
+  
+  sbURJC={title:"URJC",imagen:"assets/images/ramas/ieeeURJC.png",ciudad:"Universidad Rey Juan Carlos",twitter:"ieee_urjc_sb",facebook:"IEEE-URJC-Student-Branch-115794485163092",web:"https://ieeesb.etsit.urjc.es/"};
+  
+  sbUS={title:"US",imagen:"assets/images/ramas/ieeeUS.png",ciudad:"Universidad de Sevilla",twitter:"ieeesbus",facebook:"IEEESBUS",web:"http://sites.ieee.org/sb-us/"};
+  
+  sbUV={title:"UV",imagen:"assets/images/ramas/ieeeUV.png",ciudad:"Universidad de Valencia",twitter:"ieeesbuv",facebook:"IEEEsbUV",web:"http://ieee.uv.es/index"};
+  
+  sbUVigo={title:"UVIGO",imagen:"assets/images/ramas/ieeeUVigo.png",ciudad:"Universidad de Vigo",twitter:"IEEEuVigo",facebook:"ieeevigo"};
+  
+  sbUZ={title:"UNIZAR",imagen:"assets/images/ramas/ieeeUZ.png",ciudad:"Universidad de Zaragoza",twitter:"ieeesbuz",facebook:"IEEEsbUZ",web:"http://sites.ieee.org/sb-unizar/"};
   
   
 

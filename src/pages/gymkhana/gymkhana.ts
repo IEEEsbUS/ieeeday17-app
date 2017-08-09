@@ -93,7 +93,7 @@ export class GymkhanaPage {
 	   this.storage.set('fin',"ok");
 	 }
 
-         document.getElementById("cabecera").innerHTML=this.todo['equipo'];
+         document.getElementById("cabecera").innerHTML="Equipo: <b>"+this.todo['equipo'].toUpperCase()+"</b>";
          document.getElementById("bloqueo").style.display="none";
 	 document.getElementById("dat").style.display="none";
 
@@ -188,7 +188,6 @@ export class GymkhanaPage {
 
   refrescar(){
     this.http.get('http://miguelmerelo.es/ieeeday/actualizar.php?equipo='+this.todo['equipo']+"&pass="+this.todo['pass'],{},{}).then(data => {
-       document.getElementById("resp").innerHTML=data.data+"";
 
        //respuesta JSON con un unico valor
        var resp=data.data.split('}')[0];

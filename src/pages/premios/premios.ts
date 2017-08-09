@@ -15,8 +15,8 @@ import { CapitulosDetallePage } from '../capitulos-detalle/capitulos-detalle';
   templateUrl: 'premios.html',
 })
 export class PremiosPage {
-  sbUMH={title:"Universidad Miguel Hernández",imagen:"assets/images/ramas/ieeeUMH.png",ciudad:"Elche",twitter:"ieeesbumh",facebook:"ieeesbumh",instagram:"ieeesbumh",web:"http://umh.ieeespain.org/"};
-  sbUV={title:"Universidad de Valencia",imagen:"assets/images/ramas/ieeeUV.png",ciudad:"Valencia",twitter:"ieeesbuv",facebook:"IEEEsbUV",web:"http://ieee.uv.es/index"};
+  sbUMH={title:"UMH",imagen:"assets/images/ramas/ieeeUMH.png",ciudad:"Universidad Miguel Hernández",twitter:"ieeesbumh",facebook:"ieeesbumh",instagram:"ieeesbumh",web:"http://umh.ieeespain.org/"};
+  sbUV={title:"UV",imagen:"assets/images/ramas/ieeeUV.png",ciudad:"Universidad de Valencia",twitter:"ieeesbuv",facebook:"IEEEsbUV",web:"http://ieee.uv.es/index"};
 
 
   aess={title:"IEEE AESS",imagen:"assets/images/capitulos/AESS.png",nombre:"IEEE Aerospace and Electronic Systems Society",web:"http://portal.uc3m.es/portal/page/portal/grupos_investigacion/giaa/links/CAPITULO_ESPANOL_DEL_IEEE_AESS",
