@@ -37,6 +37,7 @@ export class RankingPage {
   consultar(){
     this.http.get('http://miguelmerelo.es/ieeeday/ranking.php',{},{}).then(data => {
       this.rellenaTabla(data.data);
+      document.getElementById("error").innerHTML="";
     })
     .catch(error => {
        document.getElementById("error").innerHTML="Error de conexión";

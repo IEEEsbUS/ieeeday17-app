@@ -24676,3 +24676,13 @@ page-ranking td {
   color: black;
   border: 1px solid blue;
 }
+
+page-ranking #error {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+page-ranking #boton {
+  text-align: center;
+}
