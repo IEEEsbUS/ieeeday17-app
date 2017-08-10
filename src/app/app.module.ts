@@ -15,6 +15,7 @@ import { CapitulosDetallePage } from '../pages/capitulos-detalle/capitulos-detal
 import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
+import { RankingPage } from '../pages/ranking/ranking';
 import { Prueba1Page } from '../pages/prueba1/prueba1';
 import { Prueba2Page } from '../pages/prueba2/prueba2';
 import { Prueba3Page } from '../pages/prueba3/prueba3';
@@ -34,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PremiosPage,
     QueesPage,
     GymkhanaPage,
+    RankingPage,
     Prueba1Page,
     Prueba2Page,
     Prueba3Page
@@ -55,6 +57,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PremiosPage,
     QueesPage,
     GymkhanaPage,
+    RankingPage,
     Prueba1Page,
     Prueba2Page,
     Prueba3Page

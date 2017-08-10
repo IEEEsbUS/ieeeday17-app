@@ -24658,3 +24658,54 @@ page-ramas-ieee .card-background-page .card-subtitle {
   font-size: 0.5em;
   margin-top: 12%;
 }
+
+page-ranking table, page-ranking th {
+  color: white;
+  background: blue;
+}
+
+page-ranking th, page-ranking td {
+  padding: 5%;
+  width: 30%;
+  border: 1px solid white;
+}
+
+page-ranking #top {
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  border-top: 1px solid blue;
+}
+
+page-ranking #izq {
+  border-left: 1px solid blue;
+}
+
+page-ranking #der {
+  border-right: 1px solid blue;
+}
+
+page-ranking tr td {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+page-ranking table {
+  padding: 5%;
+  width: 100%;
+}
+
+page-ranking td {
+  background: white;
+  color: black;
+  border: 1px solid blue;
+}
+
+page-ranking #error {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+page-ranking #boton {
+  text-align: center;
+}

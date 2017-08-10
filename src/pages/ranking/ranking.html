@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Clasificación</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div id="boton">
+      <button (click)="refrescar()" ion-button icon-only>
+	<ion-icon name="refresh"></ion-icon>
+      </button>
+  </div>
+  
+  <h1 id="error"></h1>
+  <table id="clasi">
+    <tr>
+      <th id="top" colspan="3">Clasificación general</th>
+    </tr>
+    <tr>
+      <th id="izq">Equipo</th>
+      <th>Pruebas resueltas</th>
+      <th id="der">Tiempo total</th>
+    </tr>
+  </table>
+</ion-content>
