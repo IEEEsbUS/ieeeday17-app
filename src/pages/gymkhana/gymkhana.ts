@@ -4,6 +4,8 @@ import { NavController, AlertController } from 'ionic-angular';
 import {HTTP} from '@ionic-native/http';
 import {Storage} from '@ionic/storage';
 
+import { RankingPage } from '../ranking/ranking';
+
 import { Prueba1Page } from '../prueba1/prueba1';
 import { Prueba2Page } from '../prueba2/prueba2';
 import { Prueba3Page } from '../prueba3/prueba3';
@@ -22,6 +24,9 @@ import { Prueba3Page } from '../prueba3/prueba3';
 export class GymkhanaPage {
   datos=[];
   todo={equipo:'',pass:''};
+
+  clasificacion=RankingPage;
+
   prueba1=Prueba1Page;
   prueba2=Prueba2Page;
   prueba3=Prueba3Page;

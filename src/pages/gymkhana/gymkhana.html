@@ -21,13 +21,13 @@
     <span id="cabecera"></span>
     <div style="margin-top:10px">
       <div style="float:left;width:50%;text-align:center">
-	<button style="" (click)="refrescar()" ion-button icon-only>
+	<button (click)="refrescar()" ion-button icon-only>
 	  <ion-icon name="refresh"></ion-icon>
 	</button>
       </div>
       <div style="float:left;width:50%;text-align:center">
-	<button ion-button icon-only>
-	  <ion-icon><img src="assets/images/pruebas/ranking.png" height="17px"/></ion-icon>
+	<button (click)="nuevaAct(clasificacion)" ion-button icon-only>
+	  <ion-icon name="trophy"></ion-icon>
 	</button>
       </div>
     </div>
