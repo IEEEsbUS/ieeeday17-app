@@ -29,23 +29,27 @@ export class CapitulosPage {
   
   cis={title:"IEEE CIS",imagen:"assets/images/capitulos/CIS.png",nombre:"IEEE Computational Intelligence Society",web:"http://cis.ieee.org/",descrip:"capitulo encargado de X"};
   
-  cs={title:"IEEE Computer Society",imagen:"assets/images/capitulos/CS.png",nombre:"IEEE Computer Society",web:"http://ieeecomputer.ieeespain.org/",descrip:"capitulo encargado de X"};
+  cs={title:"IEEE CS",imagen:"assets/images/capitulos/CS.png",nombre:"IEEE Computer Society",web:"http://ieeecomputer.ieeespain.org/",descrip:"capitulo encargado de X"};
   
   ces={title:"IEEE CESOC",imagen:"assets/images/capitulos/CES.png",nombre:"IEEE Consumer Electronics Society",web:"http://cesoc.ieee.org/",descrip:"capitulo encargado de X"};
-  
-  edus={title:"IEEE Education Society",imagen:"assets/images/capitulos/EDUS.png",nombre:"IEEE Education Society",web:"http://www.ieec.uned.es/es/",descrip:"capitulo encargado de X"};
+
+  css={title:"IEEE CSS",imagen:"assets/images/capitulos/CSS.png",nombre:"IEEE Control Systems Society",web:"http://ieeecss.org/",descrip1:"En España forma un \"Council\" con IEEE Industrial Applications Society"};
+
+  edus={title:"IEEE ES",imagen:"assets/images/capitulos/EDUS.png",nombre:"IEEE Education Society",web:"http://www.ieec.uned.es/es/",descrip:"capitulo encargado de X"};
   
   emc={title:"IEEE EMC",imagen:"assets/images/capitulos/EMC.png",nombre:"IEEE Electromagnetic Compatibility Society",web:"http://www.emcs.org/",descrip:"capitulo encargado de X"};
   
   eds={title:"IEEE EDS",imagen:"assets/images/capitulos/EDS.png",nombre:"IEEE Electron Devices Society",web:"http://eds.ieee.org/",descrip:"capitulo encargado de X"};
   
   grss={title:"IEEE GRSS",imagen:"assets/images/capitulos/GRSS.png",nombre:"IEEE Geoscience and Remote Sensing Society",web:"https://www.grss-ieee.org/",descrip:"capitulo encargado de X"};
+
+  ias={title:"IEEE IAS",imagen:"assets/images/capitulos/IAS.png",nombre:"IEEE Industrial Applications Society",web:"http://ias.ieee.org/",descrip1:"En España forma un \"Council\" con IEEE Control Systems Society"};
   
   its={title:"IEEE ITS",imagen:"assets/images/capitulos/ITS.png",nombre:"IEEE Information Theory Society",web:"http://www.itsoc.org/people/chapters/spain-chapter",descrip:"capitulo encargado de X"};
   
   itss={title:"IEEE ITSS",imagen:"assets/images/capitulos/ITSS.png",nombre:"IEEE Intelligent Transportation Systems Society",web:"https://www.ieee-itss.org/",descrip:"capitulo encargado de X"};
   
-  mags={title:"IEEE Magnetics Society",imagen:"assets/images/capitulos/MAGS.png",nombre:"IEEE Magnetics Society",web:"https://webinabox.vtools.ieee.org/wibp_home/index/CH08614",descrip:"capitulo encargado de X"};
+  mags={title:"IEEE MS",imagen:"assets/images/capitulos/MAGS.png",nombre:"IEEE Magnetics Society",web:"https://webinabox.vtools.ieee.org/wibp_home/index/CH08614",descrip:"capitulo encargado de X"};
   
   oes={title:"IEEE OES",imagen:"assets/images/capitulos/OES.png",nombre:"IEEE Oceanic Engineering Society",web:"http://www.ieeeoes.org/",descrip:"capitulo encargado de X"};
 

@@ -14,6 +14,7 @@
   <p class="texto">
     Una sociedad es un grupo de colaboración centrado en un área específica de estudio. Una sociedad se divide en varios capítulos técnicos asociados a un país.<br/><br/>En el caso de España, podemos encontrar los siguientes Capítulos Técnicos.
   </p>
+  
   <ion-card (click)="newChapter(aess)">
     <img src="assets/images/capitulos/AESS.png"/>
     
@@ -42,6 +43,26 @@
     <img src="assets/images/capitulos/CES.png"/>
     
   </ion-card>
+
+  
+
+  <div class="parent">
+    <div class="son">
+      <ion-card (click)="newChapter(css)">
+	<img src="assets/images/capitulos/CSS.png"/>
+	
+      </ion-card>
+    </div>
+    <div class="son">
+      <ion-card (click)="newChapter(ias)">
+	<img src="assets/images/capitulos/IAS.png"/>
+	
+      </ion-card>
+    </div>
+  </div>
+  
+
+  
   <ion-card (click)="newChapter(edus)">
     <img src="assets/images/capitulos/EDUS.png"/>
     
