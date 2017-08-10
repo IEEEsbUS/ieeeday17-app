@@ -9,6 +9,13 @@
 
 
 <ion-content padding>
+  <div style="margin:auto;">
+    <button (click)="refrescar()" ion-button icon-only>
+      <ion-icon name="refresh"></ion-icon>
+    </button>
+  </div>
+  
+  <p id="error"></p>
   <table id="clasi">
     <tr>
       <th id="top" colspan="3">Clasificación general</th>
