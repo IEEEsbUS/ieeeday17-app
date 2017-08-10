@@ -24314,16 +24314,44 @@ ion-navbar.toolbar {
 }
 
 .toolbar-title {
-  color: white;
+  color: #006da4;
   align: center;
 }
 
-.toolbar-background {
-  background-color: #0152A1;
+.toolbar button {
+  color: #006da4;
 }
 
-ion-icon {
+.toolbar-background {
+  background-color: #e2e2e2;
+}
+
+ion-menu ion-icon {
   color: white;
+}
+
+page-home #sponsor {
+  clear: both;
+  margin-top: 40px;
+}
+
+page-home #sponsor p {
+  color: #5192c3;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #5192c3;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  letter-spacing: 1px;
+}
+
+page-home #sponsor p span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+page-home #sponsor img {
+  width: 100%;
 }
 
 .itemList {
@@ -24432,6 +24460,14 @@ page-capitulos-detalle .web span {
   text-align: center;
 }
 
+page-gymkhana #cabecera b {
+  color: red;
+}
+
+page-gymkhana ion-input {
+  border-bottom: solid 1px #eaeaea;
+}
+
 page-premios h1 {
   text-align: center;
 }
@@ -24484,6 +24520,26 @@ page-premios .ramas > div > span, page-premios .capitulo > div > span {
 page-premios .ramas > div img {
   width: 80%;
   max-width: 200px;
+}
+
+page-prueba1 img {
+  width: 100%;
+}
+
+page-prueba1 #error {
+  color: red;
+}
+
+page-prueba1 #correcto {
+  color: green;
+}
+
+page-prueba1 #inicio, page-prueba1 #contenido, page-prueba1 #desafio {
+  display: none;
+}
+
+page-prueba1 #respuesta {
+  border-bottom: solid 1px #eaeaea;
 }
 
 page-ramas-detalle p {
