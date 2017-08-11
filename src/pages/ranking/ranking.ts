@@ -81,6 +81,7 @@ export class RankingPage {
       var td = document.createElement('td');
       var pos=i+1;
       td.innerHTML=""+pos;
+      td.style.width="10%";
       tr.appendChild(td);
       for (var j = 0; j < 3; j++) {
         var td = document.createElement('td');
