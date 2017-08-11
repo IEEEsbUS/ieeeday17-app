@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import {HTTP} from '@ionic-native/http';
-//import { Toast } from '@ionic-native/toast';
 
 /**
  * Generated class for the RankingPage page.
@@ -16,7 +15,6 @@ import {HTTP} from '@ionic-native/http';
   templateUrl: 'ranking.html',
 })
 export class RankingPage {
-//,private toast: Toast
   constructor(public navCtrl: NavController,private http:HTTP,public navParams: NavParams) {
   }
 
@@ -28,7 +26,7 @@ export class RankingPage {
     var list=document.getElementById("clasi");
     var num=document.getElementsByTagName("tr").length;
 
-    for(var i=2;i<num;i++){
+    for(var i=num-1;i>1;i--){
       list.removeChild(list.childNodes[i]);
     }
     this.consultar();
@@ -68,18 +66,22 @@ export class RankingPage {
 	var tiempo=resp1[2].split(':')[1].split('\"')[1];
       }
 	
-      var tabAux=[nombre,parseInt(nMisiones),parseInt(tiempo)];
+      var tabAux=[nombre,parseInt(nMisiones),parseFloat(tiempo)/1000];
       tabla[i]=tabAux;
     }
       
     tabla = tabla.sort(function(a,b) {
-      return b[2] - a[2];
+      return a[2] - b[2];
     });
       
     var tablaHTML=document.getElementById("clasi");
       
     for (i = 0; i < nEquipos; i++) {
       var tr = document.createElement('tr');
+      var td = document.createElement('td');
+      var pos=i+1;
+      td.innerHTML=""+pos;
+      tr.appendChild(td);
       for (var j = 0; j < 3; j++) {
         var td = document.createElement('td');
         td.innerHTML=tabla[i][j];
