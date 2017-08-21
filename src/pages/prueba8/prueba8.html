@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Prueba 8</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Torre del Oro</h1>
+  <div id="inicio">
+    <div (click)="openURL(web)">
+      <p><img src="assets/images/pruebas/torreDelOroMaps.png"/></p>
+      <p>Ve a la Torre del Oro. <br/>37.382492º, -5.996313º</p>
+    </div>
+    <button (click)="empezar()" ion-button full>Empezar desafío</button>
+  </div>
+  
+  <div id="desafio">
+    <p id="descrReto"></p>
+    <ion-input id="respuesta" [(ngModel)]="respuesta" placeholder="Respuesta"></ion-input>
+    <button (click)="consulta()" ion-button full>Enviar respuesta</button>
+    <p id="error">Respuesta equivocada</p>
+  </div>
+  
+  <div id="contenido">
+    <p id="correcto">Respuesta correcta</p>
+    <p><img src="assets/images/pruebas/torreDelOro.png"/></p>
+    <p>Torre del Oro, descripción y datos sobre el sitio</p>
+  </div>
+</ion-content>

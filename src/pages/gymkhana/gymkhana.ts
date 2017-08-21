@@ -9,6 +9,13 @@ import { RankingPage } from '../ranking/ranking';
 import { Prueba1Page } from '../prueba1/prueba1';
 import { Prueba2Page } from '../prueba2/prueba2';
 import { Prueba3Page } from '../prueba3/prueba3';
+import { Prueba4Page } from '../prueba4/prueba4';
+import { Prueba5Page } from '../prueba5/prueba5';
+import { Prueba6Page } from '../prueba6/prueba6';
+import { Prueba7Page } from '../prueba7/prueba7';
+import { Prueba8Page } from '../prueba8/prueba8';
+import { Prueba9Page } from '../prueba9/prueba9';
+import { Prueba10Page } from '../prueba10/prueba10';
 
 /**
  * Generated class for the GymkhanaPage page.
@@ -30,16 +37,19 @@ export class GymkhanaPage {
   prueba1=Prueba1Page;
   prueba2=Prueba2Page;
   prueba3=Prueba3Page;
+  prueba4=Prueba4Page;
+  prueba5=Prueba5Page;
+  prueba6=Prueba6Page;
+  prueba7=Prueba7Page;
+  prueba8=Prueba8Page;
+  prueba9=Prueba9Page;
+  prueba10=Prueba10Page;
   
   constructor(public navCtrl: NavController,private http:HTTP,private storage:Storage,private alertCtrl: AlertController) {
   }
 
 
   ionViewWillEnter() {
-    //this.activarPruebas();
-  //}
-  
-  //ionViewWillLoad() {
     this.storage.get('equipo').then((val) =>{
       if(val==null){
       
@@ -80,7 +90,7 @@ export class GymkhanaPage {
 
     this.http.get('http://miguelmerelo.es/ieeeday/actualizar.php?equipo='+this.todo['equipo']+"&pass="+this.todo['pass'],{},{}).then(data => {
 
-       //respuesta JSON con un unico valor
+       //respuesta JSON
        var resp=data.data.split('}')[0];
        var status=resp.split(',')[0].split(':')[1].split('\"')[1];
 
@@ -105,11 +115,14 @@ export class GymkhanaPage {
 	 this.activarPruebas();
 	 document.getElementById("lista").style.display="inline";
        }else{
+         document.getElementById("dat").innerHTML="ERROR, el equipo y contraseña no son correctos.";
          document.getElementById("dat").style.display="inline";
        }
      })
      .catch(error => {
 
+       document.getElementById("dat").innerHTML="Hay un fallo en la conexión con el servidor.";
+       document.getElementById("dat").style.display="inline";
        console.log(error.status);
        console.log(error.error); // error message as string
        console.log(error.headers);
@@ -222,5 +235,15 @@ export class GymkhanaPage {
 
      });
 
+  }
+
+  reglas(){
+    document.getElementById("lista").style.display="none";
+    document.getElementById("reglas").style.display="inline";
+  }
+
+  cerrarReglas(){
+    document.getElementById("reglas").style.display="none";
+    document.getElementById("lista").style.display="inline";
   }
 }

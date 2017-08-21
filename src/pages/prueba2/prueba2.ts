@@ -5,7 +5,7 @@ import {HTTP} from '@ionic-native/http';
 import {Storage} from '@ionic/storage';
 
 /**
- * Generated class for the Prueba1Page page.
+ * Generated class for the Prueba2Page page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -16,6 +16,7 @@ import {Storage} from '@ionic/storage';
   templateUrl: 'prueba2.html',
 })
 export class Prueba2Page {
+  public web="https://www.google.es/maps/place/37°23'22.2\"N+5°59'24.7\"W/@37.3894606,-5.9912179";
   descripcion="";
   respuesta='';
   equipo="";
@@ -149,6 +150,10 @@ export class Prueba2Page {
        
      });
     
+  }
+
+  openURL(url){
+    window.open(url,'_system');
   }
 
 }

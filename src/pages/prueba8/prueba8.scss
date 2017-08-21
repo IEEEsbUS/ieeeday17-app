@@ -1,0 +1,21 @@
+page-prueba8 {
+    img{
+	width:100%;
+    }
+
+    #error{
+	color:red;
+    }
+
+    #correcto{
+	color:green;
+    }
+
+    #inicio, #contenido, #desafio{
+	display:none;
+    }
+
+    #respuesta{
+	border-bottom:solid 1px #eaeaea;
+    }
+}
