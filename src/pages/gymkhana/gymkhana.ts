@@ -238,12 +238,10 @@ export class GymkhanaPage {
   }
 
   reglas(){
-    document.getElementById("lista").style.display="none";
-    document.getElementById("reglas").style.display="inline";
+    document.getElementById("container").style.display="inline";
   }
 
   cerrarReglas(){
-    document.getElementById("reglas").style.display="none";
-    document.getElementById("lista").style.display="inline";
+    document.getElementById("container").style.display="none";
   }
 }
