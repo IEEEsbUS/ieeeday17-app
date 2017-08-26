@@ -12,6 +12,7 @@ import { RamasIEEE } from '../pages/ramas-ieee/ramas-ieee';
 import { RamasDetalle } from '../pages/ramas-detalle/ramas-detalle';
 import { CapitulosPage } from '../pages/capitulos/capitulos';
 import { CapitulosDetallePage } from '../pages/capitulos-detalle/capitulos-detalle';
+import { YoungprofessionalsPage } from '../pages/youngprofessionals/youngprofessionals';
 import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
@@ -32,6 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RamasDetalle,
     CapitulosPage,
     CapitulosDetallePage,
+    YoungprofessionalsPage,
     PremiosPage,
     QueesPage,
     GymkhanaPage,
@@ -54,6 +56,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RamasDetalle,
     CapitulosPage,
     CapitulosDetallePage,
+    YoungprofessionalsPage,
     PremiosPage,
     QueesPage,
     GymkhanaPage,

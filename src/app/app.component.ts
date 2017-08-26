@@ -7,6 +7,7 @@ import { HomePage } from '../pages/Inicio/inicio';
 import { AgendaPage } from '../pages/agenda/agenda';
 import { RamasIEEE } from '../pages/ramas-ieee/ramas-ieee';
 import { CapitulosPage } from '../pages/capitulos/capitulos';
+import { YoungprofessionalsPage } from '../pages/youngprofessionals/youngprofessionals';
 import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
@@ -32,6 +33,7 @@ export class MyApp {
       { title: 'Premios 2017', component: PremiosPage},
       { title: 'Ramas', component: RamasIEEE},
       { title: 'Capitulos', component: CapitulosPage},
+      { title: 'Young Professionals', component: YoungprofessionalsPage},
       { title: 'Gymkhana', component: GymkhanaPage}
     ];
 
