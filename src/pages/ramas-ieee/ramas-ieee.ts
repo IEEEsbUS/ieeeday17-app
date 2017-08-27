@@ -40,7 +40,7 @@ export class RamasIEEE {
   
   sbURJC={title:"URJC",imagen:"assets/images/ramas/ieeeURJC.png",ciudad:"Universidad Rey Juan Carlos",twitter:"ieee_urjc_sb",facebook:"IEEE-URJC-Student-Branch-115794485163092",web:"https://ieeesb.etsit.urjc.es/"};
   
-  sbUS={title:"US",imagen:"assets/images/ramas/ieeeUS.png",ciudad:"Universidad de Sevilla",twitter:"ieeesbus",facebook:"IEEESBUS",web:"http://sites.ieee.org/sb-us/"};
+  sbUS={title:"US",imagen:"assets/images/ramas/ieeeUS.png",ciudad:"Universidad de Sevilla",twitter:"ieeesbus",facebook:"IEEESBUS",instagram:"ieeesbus",web:"http://sites.ieee.org/sb-us/"};
   
   sbUV={title:"UV",imagen:"assets/images/ramas/ieeeUV.png",ciudad:"Universidad de Valencia",twitter:"ieeesbuv",facebook:"IEEEsbUV",web:"http://ieee.uv.es/index"};
   
