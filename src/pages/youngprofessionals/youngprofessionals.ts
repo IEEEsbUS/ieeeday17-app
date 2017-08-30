@@ -12,6 +12,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'youngprofessionals.html',
 })
 export class YoungprofessionalsPage {
+  public yp="http://yp.ieee.org";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -20,4 +21,7 @@ export class YoungprofessionalsPage {
     console.log('ionViewDidLoad YoungprofessionalsPage');
   }
 
+  openURL(url){
+    window.open(url,'_system');
+  }
 }

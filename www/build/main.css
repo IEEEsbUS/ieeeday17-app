@@ -24710,3 +24710,15 @@ page-ranking #error {
 page-ranking #boton {
   text-align: center;
 }
+
+page-youngprofessionals ul {
+  list-style: circle;
+}
+
+page-youngprofessionals p {
+  text-align: justify;
+}
+
+page-youngprofessionals .enlace {
+  color: blue;
+}
