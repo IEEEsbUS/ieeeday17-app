@@ -13,23 +13,73 @@
     <ion-input id="equipo" [(ngModel)]="todo.equipo" placeholder="Equipo" type="text"></ion-input>
     <ion-input id="pass" [(ngModel)]="todo.pass" placeholder="Clave" type="text"></ion-input>
     <button (click)="editar()" ion-button full>Confirmar datos</button>
-    <div id="dat" style="color:red;display:none">ERROR, el equipo y contraseña no son correctos.</div>
+    <div id="dat" style="color:red;display:none"></div>
+    <p>La gymkhana comenzará el sabado 21 de Octubre a las 17:00</p>
+    <p>Reglas:</p>
+    <ul>
+      <li>La duración de los desplazamientos está estimada en 1 hora</li>
+      <li>Hay un total de 10 pruebas</li>
+      <li>El equipo que gane la gymkhana será aquel que resuelva las distintas pruebas en el menor tiempo</li>
+      <li>El tiempo total será la suma del tiempo parcial de cada prueba</li>
+      <li>El tiempo de desplazamientos entre zonas no suma al tiempo total. De esta forma, podrás tomarte el tiempo que necesites para ver cada sitio</li>
+      <li>Cada equipo comenzará en una ubicación distinta</li>
+      <li>Al desbloquear una prueba, se te indicará la posición a la que debes ir. En cada prueba se ofrece un enlace a google maps con la posición</li>
+      <li>Al llegar al sitio, pulsa el botón <b><i>Empezar desafío</i></b>. A partir de este punto, el tiempo empieza a correr hasta que resuelvas el desafío.</li>
+      <li>Cada fallo incrementa el tiempo total en 10s</li>
+      <li>Todos los miembros del mismo equipo tendrán la misma información sobre las pruebas. Cuando se resuelva una prueba, el resto del equipo deberá pulsar el botón de actualización</li>
+      <li>Recomendamos que cada prueba solo se resuelva desde un móvil</li>
+      <li>La clasificación de los equipos, número de pruebas resueltas y tiempo total, estará disponible, y actualizado, en todo momento</li>
+      <li>Disfruta de la visita</li>
+    </ul>
   </span>
-  
+
+  <div id="container">
+    <div id="reglas">
+      <div id="cancel">
+	<button (click)="cerrarReglas()" ion-button icon-only>
+	  <ion-icon name="close"></ion-icon>
+	</button>  
+      </div>
+      <p>Reglas:</p>
+      <ul>
+	<li>La duración de los desplazamientos está estimada en 1 hora</li>
+	<li>Hay un total de 10 pruebas</li>
+	<li>El equipo que gane la gymkhana será aquel que resuelva las distintas pruebas en el menor tiempo</li>
+	<li>El tiempo total será la suma del tiempo parcial de cada prueba</li>
+	<li>El tiempo de desplazamientos entre zonas no suma al tiempo total. De esta forma, podrás tomarte el tiempo que necesites para ver cada sitio</li>
+	<li>Cada equipo comenzará en una ubicación distinta</li>
+	<li>Al desbloquear una prueba, se te indicará la posición a la que debes ir. En cada prueba se ofrece un enlace a google maps con la posición</li>
+	<li>Al llegar al sitio, pulsa el botón <b><i>Empezar desafío</i></b>. A partir de este punto, el tiempo empieza a correr hasta que resuelvas el desafío.</li>
+	<li>Cada fallo incrementa el tiempo total en 10s</li>
+	<li>Todos los miembros del mismo equipo tendrán la misma información sobre las pruebas. Cuando se resuelva una prueba, el resto del equipo deberá pulsar el botón de actualización</li>
+	<li>Recomendamos que cada prueba solo se resuelva desde un móvil</li>
+	<li>La clasificación de los equipos, número de pruebas resueltas y tiempo total, estará disponible, y actualizado, en todo momento</li>
+	<li>Disfruta de la visita</li>
+      </ul>
+    </div>
+    <div id="margen">
+    </div>
+  </div>
   <span id="lista" style="display:none">
     <span id="cabecera"></span>
     <div style="margin-top:10px">
-      <div style="float:left;width:50%;text-align:center">
+      <div style="float:left;width:33%;text-align:center">
 	<button (click)="refrescar()" ion-button icon-only>
 	  <ion-icon name="refresh"></ion-icon>
 	</button>
       </div>
-      <div style="float:left;width:50%;text-align:center">
+      <div style="float:left;width:33%;text-align:center">
 	<button (click)="nuevaAct(clasificacion)" ion-button icon-only>
 	  <ion-icon name="trophy"></ion-icon>
 	</button>
       </div>
+      <div style="float:left;width:33%;text-align:center">
+	<button (click)="reglas()" ion-button icon-only>
+	  <ion-icon name="alert"></ion-icon>
+	</button>
+      </div>
     </div>
+    
     <ion-item class="list" detail-push (click)="nuevaAct(prueba1)" style="display:none">
       <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 1
     </ion-item>
@@ -38,6 +88,27 @@
     </ion-item>
     <ion-item class="list" detail-push (click)="nuevaAct(prueba3)" style="display:none">
       <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 3
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba4)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 4
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba5)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 5
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba6)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 6
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba7)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 7
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba8)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 8
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba9)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 9
+    </ion-item>
+    <ion-item class="list" detail-push (click)="nuevaAct(prueba10)" style="display:none">
+      <img class="img" src="assets/images/tickVerde.png" height="12px"/> Prueba 10
     </ion-item>
   </span>
 </ion-content>

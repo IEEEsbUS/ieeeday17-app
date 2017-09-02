@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Prueba 9</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Alcázar</h1>
+  <div id="inicio">
+    <div (click)="openURL(web)">
+      <p><img src="assets/images/pruebas/alcazarMaps.png"/></p>
+      <p>Ve al Alcázar. <br/>37.384535º, -5.992201º</p>
+    </div>
+    <button (click)="empezar()" ion-button full>Empezar desafío</button>
+  </div>
+  
+  <div id="desafio">
+    <p id="descrReto"></p>
+    <ion-input id="respuesta" [(ngModel)]="respuesta" placeholder="Respuesta"></ion-input>
+    <button (click)="consulta()" ion-button full>Enviar respuesta</button>
+    <p id="error">Respuesta equivocada</p>
+  </div>
+  
+  <div id="contenido">
+    <p id="correcto">Respuesta correcta</p>
+    <p><img src="assets/images/pruebas/alcazar.png"/></p>
+    <p>Alcázar, descripción y datos sobre el sitio</p>
+  </div>
+</ion-content>

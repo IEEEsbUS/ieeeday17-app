@@ -5,7 +5,7 @@ import {HTTP} from '@ionic-native/http';
 import {Storage} from '@ionic/storage';
 
 /**
- * Generated class for the Prueba1Page page.
+ * Generated class for the Prueba3Page page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -16,6 +16,7 @@ import {Storage} from '@ionic/storage';
   templateUrl: 'prueba3.html',
 })
 export class Prueba3Page {
+  public web="https://www.google.es/maps/place/37°23'34.1\"N+5°59'30.7\"W/@37.392805,-5.9940507";
   descripcion="";
   respuesta='';
   equipo="";
@@ -60,7 +61,10 @@ export class Prueba3Page {
               this.storage.set('prueba3Ini',"ok");
       	    }
 	    else{
-    	      if(prIni>prAct){
+	      if(prIni<=prAct&&prIni<=3&&3<prAct){
+      	        this.storage.set('prueba3Ini',"ok");
+      	        this.storage.set('prueba3res',"ok");
+    	      }else if(prAct<prIni&&(3<prAct||3>=prIni)){
      	        this.storage.set('prueba3res',"ok");
       	        this.storage.set('prueba3Ini',"ok");
     	      }
@@ -99,7 +103,7 @@ export class Prueba3Page {
       var status=data.data.split('}')[0].split(':')[1].split("\"")[1];
       if(status.localeCompare("ok")==0){
 	this.storage.set('prueba3res',"si");
-	this.storage.set('pruebaAct',"1");
+	this.storage.set('pruebaAct',"4");
 
 	document.getElementById("desafio").style.display="none";
 	document.getElementById("contenido").style.display="inline";
@@ -147,6 +151,10 @@ export class Prueba3Page {
        
      });
     
+  }
+
+  openURL(url){
+    window.open(url,'_system');
   }
 
 }

@@ -71,7 +71,10 @@ export class RankingPage {
     }
       
     tabla = tabla.sort(function(a,b) {
-      return a[2] - b[2];
+      if(a[1]==b[1])
+        return (a[2] < b[2]) ? -1 : (a[2] > b[2]) ? 1 : 0;
+      else
+	return (a[1]>b[1]) ? -1 : 1;
     });
       
     var tablaHTML=document.getElementById("clasi");
@@ -81,6 +84,7 @@ export class RankingPage {
       var td = document.createElement('td');
       var pos=i+1;
       td.innerHTML=""+pos;
+      td.style.width="10%";
       tr.appendChild(td);
       for (var j = 0; j < 3; j++) {
         var td = document.createElement('td');

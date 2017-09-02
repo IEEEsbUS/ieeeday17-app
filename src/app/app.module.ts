@@ -20,6 +20,13 @@ import { RankingPage } from '../pages/ranking/ranking';
 import { Prueba1Page } from '../pages/prueba1/prueba1';
 import { Prueba2Page } from '../pages/prueba2/prueba2';
 import { Prueba3Page } from '../pages/prueba3/prueba3';
+import { Prueba4Page } from '../pages/prueba4/prueba4';
+import { Prueba5Page } from '../pages/prueba5/prueba5';
+import { Prueba6Page } from '../pages/prueba6/prueba6';
+import { Prueba7Page } from '../pages/prueba7/prueba7';
+import { Prueba8Page } from '../pages/prueba8/prueba8';
+import { Prueba9Page } from '../pages/prueba9/prueba9';
+import { Prueba10Page } from '../pages/prueba10/prueba10';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,7 +47,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RankingPage,
     Prueba1Page,
     Prueba2Page,
-    Prueba3Page
+    Prueba3Page,
+    Prueba4Page,
+    Prueba5Page,
+    Prueba6Page,
+    Prueba7Page,
+    Prueba8Page,
+    Prueba9Page,
+    Prueba10Page
   ],
   imports: [
     BrowserModule,
@@ -63,7 +77,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RankingPage,
     Prueba1Page,
     Prueba2Page,
-    Prueba3Page
+    Prueba3Page,
+    Prueba4Page,
+    Prueba5Page,
+    Prueba6Page,
+    Prueba7Page,
+    Prueba8Page,
+    Prueba9Page,
+    Prueba10Page
   ],
   providers: [
     HTTP,
