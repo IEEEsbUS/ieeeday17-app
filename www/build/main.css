@@ -24354,6 +24354,10 @@ page-home #sponsor img {
   width: 100%;
 }
 
+page-agenda .enlace {
+  color: blue;
+}
+
 page-agenda .itemLeft {
   width: 20%;
   float: left;

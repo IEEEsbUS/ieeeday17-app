@@ -9,6 +9,13 @@
 
 
 <ion-content padding>
+
+  
+  Viernes en <span class="enlace" (click)="openURL(caixa)">CaixaForum Sevilla</span>
+  <br/><br/>
+  Sábado en <span class="enlace" (click)="openURL(hotel)">Hotel Barceló Sevilla Renacimiento</span>
+  
+  
   <div padding>
   <ion-segment [(ngModel)]="agenda">
     <ion-segment-button value="viernes">
@@ -19,7 +26,6 @@
     </ion-segment-button>
   </ion-segment>
   </div>
-
 
   <div [ngSwitch]="agenda">
     <ion-list *ngSwitchCase="'viernes'">
@@ -95,7 +101,7 @@
     
     
     <ion-list *ngSwitchCase="'sabado'">
-      <ion-item>
+      <ion-item (click)="showAlert(10)">
 	<div class="itemLeft">
 	  <p>
 	    8:30
@@ -103,12 +109,12 @@
 	</div>
 	<div class="itemRight">
 	  <p style="color:black">
-	    Reunión de la junta directiva de la sección
+	    Reunión de la junta directiva de la sección*
 	  </p>
 	</div>
       </ion-item>
 
-      <ion-item>
+      <ion-item (click)="showAlert(11)">
 	<div class="itemLeft">
 	  <p>
 	    11:00
@@ -116,12 +122,12 @@
 	</div>
 	<div class="itemRight">
 	  <p style="color:black">
-	    Gymkhana
+	    Gymkhana (Comienza en Plaza Nueva)
 	  </p>
 	</div>
       </ion-item>
 
-      <ion-item>
+      <ion-item (click)="showAlert(12)">
 	<div class="itemLeft">
 	  <p>
 	    16:00
@@ -129,7 +135,20 @@
 	</div>
 	<div class="itemRight">
 	  <p style="color:black">
-	    Jornadas de formación para las ramas de estudiantes
+	    Jornadas de formación para las ramas de estudiantes*
+	  </p>
+	</div>
+      </ion-item>
+      
+      <ion-item (click)="showAlert(13)">
+	<div class="itemLeft">
+	  <p>
+	    18:00
+	  </p>
+	</div>
+	<div class="itemRight">
+	  <p style="color:black">
+	    Young Professionals Tour
 	  </p>
 	</div>
       </ion-item>
