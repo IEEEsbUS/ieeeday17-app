@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/elsalvadorMaps.png"/></p>
-      <p>Ve a la plaza de El Salvador. <br/>37.390080º, -5.993140º</p>
+      <p class="azul">Ve a la plaza de El Salvador. <br/>37.390080º, -5.993140º</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,7 +27,14 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. <br/>37.390080º, -5.993140º</p>
     <p><img src="assets/images/pruebas/elsalvador.png"/></p>
-    <p>El Salvador, descripción y datos sobre el sitio</p>
+    <ol>
+      <li>Es la <b>segunda iglesia más grande</b> de Sevilla, después de la Catedral.</li>
+      <li>El edificio se alzó sobre la mezquita de <b>Ibn Adabbas</b>, la cual fue conquistada por los cristianos, que permitieron su uso como mezquita hasta el año 1340 en la que fue convertida en parroquia del Salvador.</li>
+      <li>La iglesia del Salvador, de estilo barroco, tiene <b>tres portadas</b>.</li>
+      <li>La Plaza del Salvador también se conocía como la <b>Plaza del Cementerio</b>, ya que se usó como tal hasta el siglo XVIII.</li>
+      <li>En la cripta de la iglesia del Salvador reposan los cuerpos de don Carlos de Borbón y Borbón, sus hijos y su esposa doña Luisa de Orléans, la nieta de Fernando VII y la abuela de Juan Carlos I.</li>
+    </ol>
   </div>
 </ion-content>

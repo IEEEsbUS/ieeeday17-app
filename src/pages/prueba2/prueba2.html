@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/cabezaDelReyMaps.png"/></p>
-      <p>Ve a la Calle Cabeza del Rey Don Pedro. <br/>37.389498, -5.990194</p>
+      <p class="azul">Ve a la Calle Cabeza del Rey Don Pedro. <br/>37.389498, -5.990194</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. 37.389498, -5.990194</p>
     <p><img src="assets/images/pruebas/reyPedro.png"/></p>
     <p>Según cuenta la leyenda, todo aconteció bien por un lío de faldas o por desafiar al entonces alcalde de la ciudad, Domingo Cerón, quien afirmaba que en la ciudad no se cometía ningún delito que quedase sin castigo, cosa  que el monarca quiso comprobar. Caminaba solo por la ciudad embozado en su capa cuando se encontró con un rival directo: uno de los Guzmanes, hijo del Conde de Niebla, familia que apoyaba a Enrique de Trastámara, hermano bastardo del rey, que quería destronarle.</p>
     <p>Un mal encuentro que por supuesto acabó en choque de espadas. Un duelo nocturno, que acabó en la muerte del miembro de los Guzmanes. Y una testigo que vio entre tinieblas y oyó desde la ventana lo sucedido: una anciana que se asomó alarmada por el ruido de aceros; alumbrándose con un candil pudo distinguir que el matador era un hombre rubio, que ceceaba al hablar y al que le sonaban las rodillas al andar como si <i>entrechocaran nueces</i>, o sea, el mismísimo rey. Por miedo a ser descubierta se retiró precipitadamente de la ventana, lo que provocó que el candil con el que se alumbraba cayera a la calle y fuera descubierto por los alguaciles, que dedujeron lo sucedido y la detuvieron.</p>

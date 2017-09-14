@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/torreDelOroMaps.png"/></p>
-      <p>Ve a la Torre del Oro. <br/>37.382492º, -5.996313º</p>
+      <p class="azul">Ve a la Torre del Oro. <br/>37.382492º, -5.996313º</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. 37.382492º, -5.996313º</p>
     <p><img src="assets/images/pruebas/torreDelOro.png"/></p>
     <p>Torre del Oro, descripción y datos sobre el sitio</p>
   </div>
