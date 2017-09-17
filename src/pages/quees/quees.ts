@@ -13,9 +13,11 @@ import { NativeAudio } from '@ionic-native/native-audio';
   templateUrl: 'quees.html',
 })
 export class QueesPage {
+  public cuenta=0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private nativeAudio: NativeAudio) {
     this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3');
+    this.cuenta=0;
   }
 
   ionViewDidLoad() {
@@ -36,5 +38,11 @@ export class QueesPage {
     setTimeout(function(){
       cuadro.style.display="none";
     }, 2500);
+  }
+
+  clickTop(){
+    this.cuenta++;
+    if(this.cuenta==5)
+      this.sonido();
   }
 }

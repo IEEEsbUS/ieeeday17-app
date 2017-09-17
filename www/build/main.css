@@ -25275,6 +25275,7 @@ page-prueba9 #respuesta {
 }
 
 page-quees #cuadro {
+  display: none;
   position: absolute;
   width: 90%;
   -webkit-animation-fill-mode: forwards;

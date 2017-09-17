@@ -4,6 +4,7 @@ page-quees {
 	100% {-webkit-transform: translateY(0px);}
     }
     #cuadro{
+	display:none;
 	position:absolute;
 	width:90%;
 	-webkit-animation-fill-mode: forwards;
