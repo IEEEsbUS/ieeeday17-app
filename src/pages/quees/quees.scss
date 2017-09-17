@@ -1,13 +1,11 @@
 page-quees {
     @-webkit-keyframes cuadro{
 	0% {-webkit-transform: translateY(-300px)}
-	100% {-webkit-transform: translateY(-25px);}
+	100% {-webkit-transform: translateY(0px);}
     }
     #cuadro{
-	-webkit-animation: cuadro 500ms ease-out 0s 1 forwards forwards paused; 
-	animation: cuadro 500ms ease-out 0s 1 forwards forwards paused;
-	-webkit-animation-play-state:paused;
-	play-state:paused;
+	-webkit-animation: cuadro ease-out 1 paused; 
+	animation: cuadro ease-out 1 paused;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 	-webkit-animation-duration: 500ms;
@@ -15,7 +13,6 @@ page-quees {
     }
     #front{
 	position:absolute;
-	top:20px;
 	width:100%;
 	z-index:5;
     }
@@ -26,7 +23,6 @@ page-quees {
     }
     #back{
 	position:absolute;
-	top:20px;
 	width:100%;
 	z-index:4;
 	display:inline;
@@ -38,7 +34,6 @@ page-quees {
     }
     #back2{
 	position:absolute;
-	top:20px;
 	width:100%;
 	z-index:3;
     }

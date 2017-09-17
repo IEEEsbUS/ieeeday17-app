@@ -25270,15 +25270,13 @@ page-prueba9 #respuesta {
     -webkit-transform: translateY(-300px);
   }
   100% {
-    -webkit-transform: translateY(-25px);
+    -webkit-transform: translateY(0px);
   }
 }
 
 page-quees #cuadro {
-  -webkit-animation: cuadro ease-out 1;
-  animation: cuadro ease-out 1;
-  -webkit-animation-play-state: paused;
-  play-state: paused;
+  -webkit-animation: cuadro ease-out 1 paused;
+  animation: cuadro ease-out 1 paused;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 500ms;
@@ -25287,7 +25285,6 @@ page-quees #cuadro {
 
 page-quees #front {
   position: absolute;
-  top: 20px;
   width: 100%;
   z-index: 5;
 }
@@ -25300,7 +25297,6 @@ page-quees #front img {
 
 page-quees #back {
   position: absolute;
-  top: 20px;
   width: 100%;
   z-index: 4;
   display: inline;
@@ -25314,7 +25310,6 @@ page-quees #back img {
 
 page-quees #back2 {
   position: absolute;
-  top: 20px;
   width: 100%;
   z-index: 3;
 }
