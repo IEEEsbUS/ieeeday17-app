@@ -25275,8 +25275,8 @@ page-prueba9 #respuesta {
 }
 
 page-quees #cuadro {
-  -webkit-animation: cuadro ease-out 1 paused;
-  animation: cuadro ease-out 1 paused;
+  position: absolute;
+  width: 90%;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 500ms;

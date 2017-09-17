@@ -28,8 +28,10 @@ export class QueesPage {
 
   sonido(){
     var cuadro=document.getElementById("cuadro");
-    cuadro.style.animationPlayState="running";
-    cuadro.style.webkitAnimationPlayState="running";
+    cuadro.style.animationName="cuadro";
+    cuadro.style.webkitAnimationName="cuadro";
+    cuadro.style.display="inline";
+    //cuadro.style.webkitAnimationPlayState="running";
     setTimeout(this.reproducir(), 500);
     setTimeout(function(){
       cuadro.style.display="none";
