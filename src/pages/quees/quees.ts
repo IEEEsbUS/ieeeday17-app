@@ -15,15 +15,23 @@ import { NativeAudio } from '@ionic-native/native-audio';
 export class QueesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private nativeAudio: NativeAudio) {
-    this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3')
+    this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QueesPage');
   }
 
+  reproducir(){
+    this.nativeAudio.play('alerta');
+  }
 
   sonido(){
-    this.nativeAudio.play('alerta');
+    var cuadro=document.getElementById("cuadro");
+    cuadro.style.animationPlayState="running";
+    setTimeout(this.reproducir(), 500);
+    setTimeout(function(){
+      cuadro.style.display="none";
+    }, 2500);
   }
 }

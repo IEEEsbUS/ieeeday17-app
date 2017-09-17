@@ -25265,6 +25265,85 @@ page-prueba9 #respuesta {
   border-bottom: solid 1px #eaeaea;
 }
 
+@-webkit-keyframes cuadro {
+  0% {
+    -webkit-transform: translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateY(-25px);
+  }
+}
+
+page-quees #cuadro {
+  -webkit-animation: cuadro ease-out 1;
+  animation: cuadro ease-out 1;
+  -webkit-animation-play-state: paused;
+  play-state: paused;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+page-quees #front {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 5;
+}
+
+page-quees #front img {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+page-quees #back {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 4;
+  display: inline;
+}
+
+page-quees #back img {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+page-quees #back2 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 3;
+}
+
+page-quees #back2 span {
+  display: block;
+  margin: auto;
+  background-color: rgba(24, 189, 96, 0.8);
+  border-radius: 100px;
+  border: solid 2px black;
+  width: 150px;
+  height: 150px;
+}
+
+page-quees #back2 p {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  color: white;
+  font-size: x-large;
+  font-family: Impact;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-color: rgba(232, 154, 20, 0.9);
+  padding: 5px;
+  max-width: 320px;
+  border-radius: 5px;
+}
+
 page-ramas-detalle p {
   text-align: center;
   clear: both;
