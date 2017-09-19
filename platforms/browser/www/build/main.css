@@ -24354,23 +24354,37 @@ page-home #sponsor img {
   width: 100%;
 }
 
-.itemList {
-  width: 100%;
-  height: 100%;
+page-agenda .enlace {
+  color: blue;
 }
 
-.itemLeft {
+page-agenda .itemLeft {
   width: 20%;
-  height: 100%;
   float: left;
-  padding: 2%;
+  padding: 1%;
 }
 
-.itemRight {
+page-agenda .itemRight {
   width: 80%;
-  height: 100%;
   float: left;
-  padding: 2%;
+  padding: 1%;
+}
+
+page-agenda p {
+  white-space: normal;
+}
+
+.alert-title {
+  color: #387ef5;
+}
+
+.alert-sub-title img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.alert-sub-title {
+  text-align: center;
 }
 
 page-capitulos .card-background-page .texto {
@@ -24413,6 +24427,29 @@ page-capitulos .card-background-page .card-title div {
 page-capitulos .card-background-page .card-subtitle {
   font-size: 0.5em;
   margin-top: 12%;
+}
+
+page-capitulos .parent {
+  width: 82%;
+  overflow: hidden;
+  margin: auto;
+  max-width: 410px;
+}
+
+page-capitulos .son {
+  width: 48%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+page-capitulos .parent ion-card {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
 }
 
 page-capitulos-detalle h3 {
@@ -24466,6 +24503,43 @@ page-gymkhana #cabecera b {
 
 page-gymkhana ion-input {
   border-bottom: solid 1px #eaeaea;
+}
+
+page-gymkhana ul li {
+  list-style-type: circle;
+  color: #727272;
+}
+
+page-gymkhana #bloqueo p {
+  color: #727272;
+}
+
+page-gymkhana #container {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 2%;
+  z-index: 100;
+  display: none;
+}
+
+page-gymkhana #margen {
+  display: relative;
+  margin-bottom: 3%;
+}
+
+page-gymkhana #reglas {
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 0.1%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+page-gymkhana #cancel {
+  position: absolute;
+  right: 2%;
 }
 
 page-premios h1 {
@@ -24539,6 +24613,186 @@ page-prueba1 #inicio, page-prueba1 #contenido, page-prueba1 #desafio {
 }
 
 page-prueba1 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba10 img {
+  width: 100%;
+}
+
+page-prueba10 #error {
+  color: red;
+}
+
+page-prueba10 #correcto {
+  color: green;
+}
+
+page-prueba10 #inicio, page-prueba10 #contenido, page-prueba10 #desafio {
+  display: none;
+}
+
+page-prueba10 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba2 img {
+  width: 100%;
+}
+
+page-prueba2 #error {
+  color: red;
+}
+
+page-prueba2 #correcto {
+  color: green;
+}
+
+page-prueba2 #inicio, page-prueba2 #contenido, page-prueba2 #desafio {
+  display: none;
+}
+
+page-prueba2 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba3 img {
+  width: 100%;
+}
+
+page-prueba3 #error {
+  color: red;
+}
+
+page-prueba3 #correcto {
+  color: green;
+}
+
+page-prueba3 #inicio, page-prueba3 #contenido, page-prueba3 #desafio {
+  display: none;
+}
+
+page-prueba3 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba4 img {
+  width: 100%;
+}
+
+page-prueba4 #error {
+  color: red;
+}
+
+page-prueba4 #correcto {
+  color: green;
+}
+
+page-prueba4 #inicio, page-prueba4 #contenido, page-prueba4 #desafio {
+  display: none;
+}
+
+page-prueba4 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba5 img {
+  width: 100%;
+}
+
+page-prueba5 #error {
+  color: red;
+}
+
+page-prueba5 #correcto {
+  color: green;
+}
+
+page-prueba5 #inicio, page-prueba5 #contenido, page-prueba5 #desafio {
+  display: none;
+}
+
+page-prueba5 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba6 img {
+  width: 100%;
+}
+
+page-prueba6 #error {
+  color: red;
+}
+
+page-prueba6 #correcto {
+  color: green;
+}
+
+page-prueba6 #inicio, page-prueba6 #contenido, page-prueba6 #desafio {
+  display: none;
+}
+
+page-prueba6 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba7 img {
+  width: 100%;
+}
+
+page-prueba7 #error {
+  color: red;
+}
+
+page-prueba7 #correcto {
+  color: green;
+}
+
+page-prueba7 #inicio, page-prueba7 #contenido, page-prueba7 #desafio {
+  display: none;
+}
+
+page-prueba7 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba8 img {
+  width: 100%;
+}
+
+page-prueba8 #error {
+  color: red;
+}
+
+page-prueba8 #correcto {
+  color: green;
+}
+
+page-prueba8 #inicio, page-prueba8 #contenido, page-prueba8 #desafio {
+  display: none;
+}
+
+page-prueba8 #respuesta {
+  border-bottom: solid 1px #eaeaea;
+}
+
+page-prueba9 img {
+  width: 100%;
+}
+
+page-prueba9 #error {
+  color: red;
+}
+
+page-prueba9 #correcto {
+  color: green;
+}
+
+page-prueba9 #inicio, page-prueba9 #contenido, page-prueba9 #desafio {
+  display: none;
+}
+
+page-prueba9 #respuesta {
   border-bottom: solid 1px #eaeaea;
 }
 
@@ -24634,4 +24888,68 @@ page-ramas-ieee .card-background-page .card-title div {
 page-ramas-ieee .card-background-page .card-subtitle {
   font-size: 0.5em;
   margin-top: 12%;
+}
+
+page-ranking table, page-ranking th {
+  color: white;
+  background: blue;
+}
+
+page-ranking th, page-ranking td {
+  padding: 5%;
+  width: 30%;
+  border: 1px solid white;
+}
+
+page-ranking #top {
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  border-top: 1px solid blue;
+}
+
+page-ranking #izq {
+  border-left: 1px solid blue;
+  width: 10%;
+}
+
+page-ranking #der {
+  border-right: 1px solid blue;
+}
+
+page-ranking tr td {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+page-ranking table {
+  padding: 5%;
+  width: 100%;
+}
+
+page-ranking td {
+  background: white;
+  color: black;
+  border: 1px solid blue;
+}
+
+page-ranking #error {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+page-ranking #boton {
+  text-align: center;
+}
+
+page-youngprofessionals ul {
+  list-style: circle;
+}
+
+page-youngprofessionals p {
+  text-align: justify;
+}
+
+page-youngprofessionals .enlace {
+  color: blue;
 }

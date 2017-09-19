@@ -33,6 +33,9 @@
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
+    <feature name="NativeAudio">
+        <param name="android-package" value="com.rjfun.cordova.plugin.nativeaudio.NativeAudio" />
+    </feature>
     <name>IEEEDay17</name>
     <description>APP desarrollada para IEEE DAY 2017 en Sevilla</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>

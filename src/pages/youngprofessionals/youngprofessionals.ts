@@ -13,6 +13,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class YoungprofessionalsPage {
   public yp="http://yp.ieee.org";
+  public ypsp="https://www.facebook.com/ypspain/";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
