@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HTTP } from '@ionic-native/http';
 import { IonicStorageModule } from '@ionic/storage';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 
 import { MyApp } from './app.component';
@@ -12,6 +13,7 @@ import { RamasIEEE } from '../pages/ramas-ieee/ramas-ieee';
 import { RamasDetalle } from '../pages/ramas-detalle/ramas-detalle';
 import { CapitulosPage } from '../pages/capitulos/capitulos';
 import { CapitulosDetallePage } from '../pages/capitulos-detalle/capitulos-detalle';
+import { YoungprofessionalsPage } from '../pages/youngprofessionals/youngprofessionals';
 import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
@@ -39,6 +41,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RamasDetalle,
     CapitulosPage,
     CapitulosDetallePage,
+    YoungprofessionalsPage,
     PremiosPage,
     QueesPage,
     GymkhanaPage,
@@ -68,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RamasDetalle,
     CapitulosPage,
     CapitulosDetallePage,
+    YoungprofessionalsPage,
     PremiosPage,
     QueesPage,
     GymkhanaPage,
@@ -85,6 +89,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     HTTP,
+    NativeAudio,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
