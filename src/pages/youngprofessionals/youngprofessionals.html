@@ -9,7 +9,20 @@
 
 
 <ion-content padding>
-  <img src="assets/images/ypFOTO.png"/>
+  <div id="cuadro">
+    <div id="front">
+      <img src="assets/images/manuYP.png" width="150px"/>
+    </div>
+    <div id="back">
+      <img src="assets/images/manuYPfondo.png" width="150px"/>
+    </div>
+    <div id="back2">
+      <span></span>
+      <p>¡¡¡ENHORABUENA!!!<br/>Has desbloqueado al coordinador de YP español</p>
+    </div>
+  </div>
+  
+  <img (click)="clickFoto()" src="assets/images/ypFOTO.png"/>
   <p>
     Young Professionals es un grupo asociado a IEEE que engloba a todos los brillantes profesionales que han terminado sus estudios de manera reciente y desean hacerse hueco en el mundo laboral.
   </p>
