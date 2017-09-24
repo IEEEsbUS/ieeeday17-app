@@ -58,7 +58,7 @@ export class RamasIEEE {
   }
 
   ionViewDidEnter(){
-    if(this.cuenta==5)
+    if(this.cuenta==10)
 	this.sonido();
   }
 
