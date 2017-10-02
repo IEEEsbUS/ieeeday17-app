@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 import {HTTP} from '@ionic-native/http';
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the RankingPage page.
@@ -15,7 +17,23 @@ import {HTTP} from '@ionic-native/http';
   templateUrl: 'ranking.html',
 })
 export class RankingPage {
-  constructor(public navCtrl: NavController,private http:HTTP,public navParams: NavParams) {
+  equipo="";
+  posicion=0;
+  finalizado=0;
+
+  constructor(public navCtrl: NavController,private http:HTTP,private storage:Storage,public navParams: NavParams,private nativeAudio: NativeAudio) {
+    this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3');
+  }
+
+  ionWillEnter(){
+    this.storage.get('equipo').then((val) =>{
+      if(val==null){
+      
+      }else{
+        console.log('equipo ',val);
+	this.equipo=val;
+      }
+    });
   }
 
   ionViewDidLoad() {
@@ -26,6 +44,8 @@ export class RankingPage {
     var list=document.getElementById("clasi");
     var num=document.getElementsByTagName("tr").length;
 
+    this.finalizado=0;
+    this.posicion=0;
     for(var i=num-1;i>1;i--){
       list.removeChild(list.childNodes[i]);
     }
@@ -56,16 +76,20 @@ export class RankingPage {
     var i=0;
     for(i=0;i<nEquipos;i++){
       var resp1=resp[i].split(',');
+      var nombre="";
+      var nMisiones="";
+      var tiempo="";
       if(i==0){
-        var nombre=resp1[0].split(':')[1].split('\"')[1];
-	var nMisiones=resp1[2].split(':')[1].split('\"')[1];
-	var tiempo=resp1[1].split(':')[1].split('\"')[1];
+        nombre=resp1[0].split(':')[1].split('\"')[1];
+	nMisiones=resp1[2].split(':')[1].split('\"')[1];
+	tiempo=resp1[1].split(':')[1].split('\"')[1];
       }else{
-	var nombre=resp1[1].split(':')[1].split('\"')[1];
-	var nMisiones=resp1[3].split(':')[1].split('\"')[1];
-	var tiempo=resp1[2].split(':')[1].split('\"')[1];
+	nombre=resp1[1].split(':')[1].split('\"')[1];
+	nMisiones=resp1[3].split(':')[1].split('\"')[1];
+	tiempo=resp1[2].split(':')[1].split('\"')[1];
       }
-	
+      if(parseInt(nMisiones)==10)
+        this.finalizado++;
       var tabAux=[nombre,parseInt(nMisiones),parseFloat(tiempo)/1000];
       tabla[i]=tabAux;
     }
@@ -87,11 +111,31 @@ export class RankingPage {
       td.style.width="10%";
       tr.appendChild(td);
       for (var j = 0; j < 3; j++) {
-        var td = document.createElement('td');
+        td = document.createElement('td');
+        if(this.equipo.localeCompare(tabla[i][j])==0)
+	  this.posicion=i+1;
         td.innerHTML=tabla[i][j];
         tr.appendChild(td);
       }
       tablaHTML.appendChild(tr);
     }
+    if(this.finalizado==nEquipos&&this.posicion==1)
+      this.sonido();
+  }
+
+  reproducir(){
+    this.nativeAudio.play('alerta');
+  }
+
+  sonido(){
+    var cuadro=document.getElementById("cuadro");
+    cuadro.style.animationName="cuadro";
+    cuadro.style.webkitAnimationName="cuadro";
+    cuadro.style.display="inline";
+    //cuadro.style.webkitAnimationPlayState="running";
+    setTimeout(this.reproducir(), 500);
+    setTimeout(function(){
+      cuadro.style.display="none";
+    }, 2500);
   }
 }
