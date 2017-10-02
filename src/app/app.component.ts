@@ -30,7 +30,6 @@ export class MyApp {
       { title: 'Inicio', component: HomePage },
       { title: '¿Qué es IEEE?', component: QueesPage},
       { title: 'Agenda', component: AgendaPage},
-      { title: 'Premios 2017', component: PremiosPage},
       { title: 'Ramas', component: RamasIEEE},
       { title: 'Capitulos', component: CapitulosPage},
       { title: 'Young Professionals', component: YoungprofessionalsPage},

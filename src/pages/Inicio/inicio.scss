@@ -1,9 +1,12 @@
 page-home {
+    #ieee{
+	text-align:center;
+    }
     #sponsor{
 	clear:both;
 	margin-top:40px;
     }
-    #sponsor p{
+    #sponsor p:first-child,#organizan p:first-child{
 	color:#5192c3;
 	width: 100%; 
 	text-align: center; 
@@ -12,11 +15,44 @@ page-home {
 	margin: 10px 0 20px;
 	letter-spacing:1px;
     }
-    #sponsor p span{
+    #sponsor p:first-child span,#organizan p:first-child span{
 	background:#fff; 
 	padding:0 10px;
     }
-    #sponsor img{
+    #sponsor .img,#organizan .img{
+	text-align:center;
+    }
+    #sponsor .img img,#organizan .img img{
+	max-width:310px;
+	width:90%;
+    }
+    p{
+	text-align:justify;
+    }
+    .sitio{
 	width:100%;
+	text-align:center;
+	overflow:hidden;
+	max-width:400px;
+	margin-left:auto;
+	margin-right:auto;
+    }
+    .sitio > div{
+	padding:2%;
+	margin:1%;
+	width:48%;
+	float:left;
+	border-radius:5%;
+	background-color:rgba(214, 214, 214,0.3);
+	box-shadow: 0px 0px 5px #888888;
+    }    
+    .sitio > div > span{
+	display:block;
+	text-align:center;
+    }
+    
+    .sitio > div img{
+	width:80%;
+	max-width:200px;
     }
 }

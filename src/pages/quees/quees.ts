@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { NativeAudio } from '@ionic-native/native-audio';
 
+import { RamasIEEE } from '../ramas-ieee/ramas-ieee';
+import { YoungprofessionalsPage } from '../youngprofessionals/youngprofessionals';
+import { CapitulosPage } from '../capitulos/capitulos';
+
 /**
  * Generated class for the QueesPage page.
  *
@@ -14,6 +18,10 @@ import { NativeAudio } from '@ionic-native/native-audio';
 })
 export class QueesPage {
   public cuenta=0;
+  public ieee="https://www.ieee.org/membership_services/membership/join/index.html?WT.mc_id=hc_join";
+  public ramas=RamasIEEE;
+  public yp=YoungprofessionalsPage;
+  public capitulos=CapitulosPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private nativeAudio: NativeAudio) {
     this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3');
@@ -24,6 +32,14 @@ export class QueesPage {
     console.log('ionViewDidLoad QueesPage');
   }
 
+  openURL(url){
+    window.open(url,'_system');
+  }
+
+  pagina(titulo){
+	this.navCtrl.push(titulo);
+  }
+  
   reproducir(){
     this.nativeAudio.play('alerta');
   }

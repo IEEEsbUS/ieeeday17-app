@@ -3,36 +3,57 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>IEEEDAY 2017</ion-title>
+    <ion-title>#IEEEDAY2017</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
-  <h3>APP PARA IEEEDAY 2017</h3>
-  
-  <p>
-    Página de inicio || Su fotito buena ahi
+<ion-content padding>  
+  <p id="ieee">
+    <img src="assets/images/ieeeday.png"/>
   </p>
 
   <p>
-    El IEEEDAY se celebra en Sevilla y reune a estudiantes y estudiantas y a miembros, miembras y miembres del IEEE.
+    Quizá cuando ingenieros de todo el mundo, miembros del germen de lo que a la postre sería el IEEE, se reunieron allá por el año de 1884 para compartir sus ideas técnicas, no sabían la que estaban liando. Hoy, más de un siglo después, fundadores como Edison, Graham Bell o Pope han sido sustituidos por miles de miembros del IEEE, que siguen conmemorando esta primera reunión y honrando el propósito de colaborar en ideas y proyectos, intercambiar experiencias y enriquecerse con puntos de vista de gente de otros rincones. Estudiantes, Young Professionals, WIE y Capítulos, miembros (y miembras) del IEEE, este año desde Sevilla, ¡queremos daros la bievenida!
   </p>
 
   <p>
-    Explicar lo bonito que es Sevilla
+    Es nuestro deseo que esta aplicación te ayude a resolver alguna de las dudas que te hayan podido surgir al desembarcar en Sevilla. No se puede capturar la belleza de los rincones sevillanos en ninguna app, pero sí que hemos podido hacer un resumen de ellos.
   </p>
 
   <p>
-    Se entregan premios
+    Para que podáis
+quedaros embobados disfrutando de las vistas sin preocuparos por el paso del tiempo, también adjuntamos un horario con los eventos más importantes del fin de semana, con viernes 20 en el Caixa Fórum, y sábado 21 en el Barceló Renacimiento. ¡Y para que lleguéis a tiempo a la entrega de premios a la mejor rama y capítulo del último año!
+  </p>
+
+  <div class="sitio">
+    <div (click)="openURL(caixa2)">
+      <span><img src="assets/images/caixaDeff.png"/></span>
+	CaixaForum<br/>Sevilla
+    </div>
+    <div (click)="openURL(hotel)">
+      <span><img src="assets/images/barceloDeff.png"/></span>
+	Hotel Barceló<br/>Renacimiento
+    </div>
+  </div>
+
+  <p>
+    Seguramente ya te habrás fijado en la pestaña de la Gymkana. ¿Gymkana? ¡Efectivamente! No nos gustaría dejaros escapar sin haceros sufrir poniéndoos un poquito a prueba, y no se nos ocurrió mejor manera de que disfrutarais de algunos de los rincones más emblemáticos de la ciudad mientras aprendíais algo acerca de los procedimientos más significativos de las ramas de estudiantes.
   </p>
 
   <p>
-    Se realiza en Caixa Forum los días 20 y 21 de octubre. Añadir cómo llegar y fotos del sitio.
+    Sin más, y dejando ya que seáis vosotros los que descifréis sorpresas adicionales que se esconden en la aplicación, esperamos poder compartir un gran fin de semana con todos vosotros, y que os llevéis una grata sorpresa de Sevilla, y los sevillanos (de nacimiento o adopción). Para que cuando el domingo agonice, tengáis la sensación de llevaros mucho más que una experiencia, os dé hasta pena desinstalar la aplicación, y os preguntéis, como casi todos por aquí: “Pero entonces, ¿Sevilla Este existe?”.
   </p>
 
   <div id="sponsor">
     <p><span>CON LA COLABORACIÓN DE</span></p>
-    <img src="assets/images/lacaixa.jpg" (click)="openURL(caixa)"/>
+    <p class="img"><img src="assets/images/lacaixa.jpg" (click)="openURL(caixa)"/></p>
+  </div>
+  <div id="organizan">
+    <p><span>ORGANIZAN</span></p>
+    <p class="img"><img src="assets/images/logo.png"/></p>
+    <p class="img"><img src="assets/images/IEEE-Students.png"/></p>
+    <p class="img"><img src="assets/images/yprof.png"/></p>
+    <p class="img"><img src="assets/images/ramas/ieeeUS.png"/></p>
   </div>
 </ion-content>
