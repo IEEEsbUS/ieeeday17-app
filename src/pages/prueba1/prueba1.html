@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/catedralMaps.png"/></p>
-      <p>Ve a la Catedral de Sevilla. <br/>37.3858626º, -5.9928018º</p>
+      <p class="azul">Ve a la Catedral de Sevilla. <br/>37.3858626º, -5.9928018º</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p (click)="openURL(web)" class="azul">Localización. 37.3858626º, -5.9928018º</p>
     <p><img src="assets/images/pruebas/catedral.png"/></p>
     <p>De mezquita almohade a Catedral de Sevilla. La construcción que estás viendo ahora mismo data de 1172. De aquella mezquita se conserva la Giralda, el Patio de los Naranjos y la Puerta del Perdón.</p>
     <p>Tras la conquista en 1248 de Sevilla se produce la reconversión de la mezquita en una catedral.</p>

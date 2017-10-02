@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/plazaEspanaMaps.png"/></p>
-      <p>Ve a la plaza de España. <br/>37.377176º, -5.986945º</p>
+      <p class="azul">Ve a la plaza de España. <br/>37.377176º, -5.986945º</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. 37.377176º, -5.986945º</p>
     <p><img src="assets/images/pruebas/plazaEspana.png"/></p>
     <p>Plaza de España, descripción y datos sobre el sitio</p>
   </div>

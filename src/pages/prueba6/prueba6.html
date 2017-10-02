@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/altozanoMaps.png"/></p>
-      <p>Ve a la plaza del Altozano. <br/>37.385148, -6.003103</p>
+      <p class="azul">Ve a la plaza del Altozano. <br/>37.385148, -6.003103</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. 37.385148, -6.003103</p>
     <p><img src="assets/images/pruebas/altozano.png"/></p>
     <p>Plaza del Altozano, descripción y datos sobre el sitio</p>
   </div>

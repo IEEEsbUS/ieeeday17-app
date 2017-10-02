@@ -13,7 +13,7 @@
   <div id="inicio">
     <div (click)="openURL(web)">
       <p><img src="assets/images/pruebas/setasMaps.png"/></p>
-      <p>Ve a las Setas. <br/>37.392805º, -5.991862º</p>
+      <p class="azul">Ve a las Setas. <br/>37.392805º, -5.991862º</p>
     </div>
     <button (click)="empezar()" ion-button full>Empezar desafío</button>
   </div>
@@ -27,6 +27,7 @@
   
   <div id="contenido">
     <p id="correcto">Respuesta correcta</p>
+    <p class="azul" (click)="openURL(web)">Localización. 37.392805º, -5.991862º</p>
     <p><img src="assets/images/pruebas/setas.png"/></p>
     <p>También conocido como Metropol Parasol, las Setas, se encuentran en la plaza de la encarnación. Tiene en su base un museo arqueológico, un mercado y distintos locales de restauración. Están coronadas por un mirador.</p>
   </div>
