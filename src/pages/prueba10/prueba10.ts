@@ -96,7 +96,8 @@ export class Prueba10Page {
        	  }else{
             document.getElementById("contenido").style.display="inline";
 	    document.getElementById("desafio").style.display="none";
-	    document.getElementById("correcto").style.display="none";
+	    document.getElementById("correcto").style.display="inline";
+	    document.getElementById("correcto").innerHTML="prueba10res:"+val+" prIni:"+prIni+" prAct"+prAct;
           }
         });
       }
