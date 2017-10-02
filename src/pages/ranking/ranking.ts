@@ -110,10 +110,10 @@ export class RankingPage {
       td.innerHTML=""+pos;
       td.style.width="10%";
       tr.appendChild(td);
+      if(this.equipo.localeCompare(tabla[i][0])==0)
+	this.posicion=i+1;
       for (var j = 0; j < 3; j++) {
         td = document.createElement('td');
-        if(this.equipo.localeCompare(tabla[i][j])==0)
-	  this.posicion=i+1;
         td.innerHTML=tabla[i][j];
         tr.appendChild(td);
       }
@@ -132,7 +132,6 @@ export class RankingPage {
     cuadro.style.animationName="cuadro";
     cuadro.style.webkitAnimationName="cuadro";
     cuadro.style.display="inline";
-    //cuadro.style.webkitAnimationPlayState="running";
     setTimeout(this.reproducir(), 500);
     setTimeout(function(){
       cuadro.style.display="none";
