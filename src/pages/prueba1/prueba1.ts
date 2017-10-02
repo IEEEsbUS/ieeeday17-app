@@ -51,49 +51,50 @@ export class Prueba1Page {
 
     this.storage.get('pruebaIni').then((val)=>{
       prIni=val;
-        this.storage.get('pruebaAct').then((val2)=>{
-          prAct=val2;
+      this.storage.get('pruebaAct').then((val2)=>{
+        prAct=val2;
 
 
-	  this.storage.get('fin').then((val3)=>{
-      	    if(val3!=null){
-	      this.storage.set('prueba1res',"ok");
-              this.storage.set('prueba1Ini',"ok");
-      	    }else{
-    	      if(prIni<=prAct&&prIni==1&&1<prAct){
-      	        this.storage.set('prueba1Ini',"ok");
-      	        this.storage.set('prueba1res',"ok");
-    	      }else if(prAct<prIni&&(1<prAct)){
-     	        this.storage.set('prueba1res',"ok");
-      	        this.storage.set('prueba1Ini',"ok");
-    	      }
-	    }
+	this.storage.get('fin').then((val3)=>{
+      	  if(val3!=null){
+	    this.storage.set('prueba1res',"ok");
+            this.storage.set('prueba1Ini',"ok");
+      	  }else{
+    	    if(prIni<=prAct&&prIni==1&&1<prAct){
+      	      this.storage.set('prueba1Ini',"ok");
+      	      this.storage.set('prueba1res',"ok");
+    	    }else if(prAct<prIni&&(1<prAct)){
+     	      this.storage.set('prueba1res',"ok");
+      	      this.storage.set('prueba1Ini',"ok");
+    	    }
+	    
 
     	    this.storage.get('prueba1Ini').then((val)=>{
       	      if(val==null){
                 document.getElementById("inicio").style.display="inline";
-              	document.getElementById("contenido").style.display="none";
-	      	document.getElementById("desafio").style.display="none";
+                document.getElementById("contenido").style.display="none";
+	        document.getElementById("desafio").style.display="none";
       	      }else{
                 document.getElementById("inicio").style.display="none";
 	
-		this.storage.get('prueba1res').then((val)=>{
-              	  if(val==null){
+	        this.storage.get('prueba1res').then((val)=>{
+                  if(val==null){
                     document.getElementById("desafio").style.display="inline";
             	    document.getElementById("contenido").style.display="none";
 	    	    document.getElementById("descrReto").innerHTML=this.descripcion;
             	    document.getElementById("error").style.display="none";
-       	      	  }else{
+       	    	  }else{
                     document.getElementById("contenido").style.display="inline";
-		    document.getElementById("desafio").style.display="none";
+	            document.getElementById("desafio").style.display="none";
 	    	    document.getElementById("correcto").style.display="none";
               	  }
-            	});
+                });
       	      }
     	    });
-    	  });
+	  }
         });
       });
+    });
   }
 
 

@@ -51,46 +51,50 @@ export class Prueba10Page {
 
     this.storage.get('pruebaIni').then((val)=>{
       prIni=val;
-        this.storage.get('pruebaAct').then((val2)=>{
-          prAct=val2;
+      this.storage.get('pruebaAct').then((val2)=>{
+        prAct=val2;
 
 
-	  this.storage.get('fin').then((val3)=>{
-      	    if(val3!=null){
-	      this.storage.set('prueba10res',"ok");
-              this.storage.set('prueba10Ini',"ok");
-      	    }else{
-    	      if(prAct<prIni&&prIni<=10){
-     	        this.storage.set('prueba10res',"ok");
-      	        this.storage.set('prueba10Ini',"ok");
-    	      }
-	    }
+        this.storage.get('fin').then((val3)=>{
+          if(val3!=null){
+            this.storage.set('prueba10res',"ok");
+            this.storage.set('prueba10Ini',"ok");
+    	  }else{
+	    if(prAct<prIni&&prIni<=10){
+     	      this.storage.set('prueba10res',"ok");
+      	      this.storage.set('prueba10Ini',"ok");
+            }
 
-    	    this.storage.get('prueba10Ini').then((val)=>{
-      	      if(val==null){
+
+
+
+
+            this.storage.get('prueba10Ini').then((val)=>{
+              if(val==null){
                 document.getElementById("inicio").style.display="inline";
-              	document.getElementById("contenido").style.display="none";
-	      	document.getElementById("desafio").style.display="none";
+                document.getElementById("contenido").style.display="none";
+	        document.getElementById("desafio").style.display="none";
       	      }else{
                 document.getElementById("inicio").style.display="none";
 	
-		this.storage.get('prueba10res').then((val)=>{
-              	  if(val==null){
+	        this.storage.get('prueba10res').then((val)=>{
+                  if(val==null){
                     document.getElementById("desafio").style.display="inline";
-            	    document.getElementById("contenido").style.display="none";
-	    	    document.getElementById("descrReto").innerHTML=this.descripcion;
-            	    document.getElementById("error").style.display="none";
-       	      	  }else{
+                    document.getElementById("contenido").style.display="none";
+	            document.getElementById("descrReto").innerHTML=this.descripcion;
+                    document.getElementById("error").style.display="none";
+       	          }else{
                     document.getElementById("contenido").style.display="inline";
-		    document.getElementById("desafio").style.display="none";
-	    	    document.getElementById("correcto").style.display="none";
-              	  }
-            	});
+	            document.getElementById("desafio").style.display="none";
+	            document.getElementById("correcto").style.display="none";
+                  }
+                });
       	      }
     	    });
-    	  });
-        });
+	  }
+    	});
       });
+    });
   }
 
 
