@@ -29,7 +29,7 @@ export class Prueba10Page {
       if(val==null){
         this.navCtrl.pop();
       }
-    });
+   });
 
     this.storage.get('equipo').then((val)=>{
       this.equipo=val;
@@ -60,10 +60,7 @@ export class Prueba10Page {
 	      this.storage.set('prueba10res',"ok");
               this.storage.set('prueba10Ini',"ok");
       	    }else{
-    	      if(prIni<=prAct&&prIni<=10&&10<prAct){
-      	        this.storage.set('prueba10Ini',"ok");
-      	        this.storage.set('prueba10res',"ok");
-    	      }else if(prIni>prAct&&(10<prAct||10>=prIni)){
+    	      if(prIni>prAct&&(10<prAct||10>=prIni)){
      	        this.storage.set('prueba10res',"ok");
       	        this.storage.set('prueba10Ini',"ok");
     	      }

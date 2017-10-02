@@ -45,7 +45,7 @@ export class Prueba2Page {
 
     this.storage.get('prueba2def').then((val)=>{
       if(val!=null){
-        this.descripcion=val;
+        this.descripcion=this.traducir(val);
       }
     });
 
@@ -86,7 +86,9 @@ export class Prueba2Page {
        	      	  }else{
                     document.getElementById("contenido").style.display="inline";
 		    document.getElementById("desafio").style.display="none";
-	    	    document.getElementById("correcto").style.display="none";
+	    	    document.getElementById("correcto").style.display="none";var fr="a\u00f1o ÁçÇññ¿?!¡";
+    fr=this.traducir(fr);
+    document.getElementById("fr").innerHTML=fr;
               	  }
             	});
       	      }
