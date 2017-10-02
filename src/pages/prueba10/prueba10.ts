@@ -50,9 +50,9 @@ export class Prueba10Page {
     });
 
     this.storage.get('pruebaIni').then((val)=>{
-      prIni=val;
+      prIni=parseInt(val);
       this.storage.get('pruebaAct').then((val2)=>{
-        prAct=val2;
+        prAct=parseInt(val2);
 
 
         this.storage.get('fin').then((val3)=>{
@@ -97,7 +97,7 @@ export class Prueba10Page {
             document.getElementById("contenido").style.display="inline";
 	    document.getElementById("desafio").style.display="none";
 	    document.getElementById("correcto").style.display="inline";
-	    document.getElementById("correcto").innerHTML="prueba10res:"+val+" prIni:"+prIni+" prAct"+prAct;
+	    document.getElementById("correcto").innerHTML="prueba10res:"+val;
           }
         });
       }

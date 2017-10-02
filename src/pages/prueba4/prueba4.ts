@@ -50,13 +50,13 @@ export class Prueba4Page {
     });
 
     this.storage.get('pruebaIni').then((val)=>{
-      prIni=val;
-        this.storage.get('pruebaAct').then((val2)=>{
-        prAct=val2;
+      prIni=parseInt(val);
+      this.storage.get('pruebaAct').then((val2)=>{
+      prAct=parseInt(val2);
 
 
-	this.storage.get('fin').then((val3)=>{
-      	  if(val3!=null){
+      this.storage.get('fin').then((val3)=>{
+         if(val3!=null){
 	    this.storage.set('prueba4res',"ok");
             this.storage.set('prueba4Ini',"ok");
 	    this.verSitio();

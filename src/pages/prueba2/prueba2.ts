@@ -50,31 +50,31 @@ export class Prueba2Page {
     });
 
     this.storage.get('pruebaIni').then((val)=>{
-      prIni=val;
-        this.storage.get('pruebaAct').then((val2)=>{
-          prAct=val2;
+      prIni=parseInt(val);
+      this.storage.get('pruebaAct').then((val2)=>{
+        prAct=parseInt(val2);
 
 
-	  this.storage.get('fin').then((val3)=>{
-      	    if(val3!=null){
-	      this.storage.set('prueba2res',"ok");
-              this.storage.set('prueba2Ini',"ok");
-  	      this.verSitio();
-      	    }else{
-    	      if(prIni<=prAct&&prIni<=2&&2<prAct){
-      	        this.storage.set('prueba2Ini',"ok");
-      	        this.storage.set('prueba2res',"ok");
-		this.verSitio();
-    	      }else if(prIni>prAct&&(2<prAct||2>=prIni)){
-     	        this.storage.set('prueba2res',"ok");
-      	        this.storage.set('prueba2Ini',"ok");
-		this.verSitio();
-    	      }else
-	        this.verElementos();
-	    }
-    	  });
-        });
+	this.storage.get('fin').then((val3)=>{
+      	  if(val3!=null){
+	    this.storage.set('prueba2res',"ok");
+            this.storage.set('prueba2Ini',"ok");
+  	    this.verSitio();
+      	  }else{
+    	    if(prIni<=prAct&&prIni<=2&&2<prAct){
+      	      this.storage.set('prueba2Ini',"ok");
+      	      this.storage.set('prueba2res',"ok");
+	      this.verSitio();
+    	    }else if(prIni>prAct&&(2<prAct||2>=prIni)){
+     	      this.storage.set('prueba2res',"ok");
+      	      this.storage.set('prueba2Ini',"ok");
+	      this.verSitio();
+    	    }else
+	      this.verElementos();
+	  }
+    	});
       });
+    });
   }
 
   verSitio(){

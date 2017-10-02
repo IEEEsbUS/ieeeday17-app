@@ -50,9 +50,9 @@ export class Prueba1Page {
     });
 
     this.storage.get('pruebaIni').then((val)=>{
-      prIni=val;
+      prIni=parseInt(val);
       this.storage.get('pruebaAct').then((val2)=>{
-        prAct=val2;
+        prAct=parseInt(val2);
 
 
 	this.storage.get('fin').then((val3)=>{
