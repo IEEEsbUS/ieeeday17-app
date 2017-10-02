@@ -52,50 +52,60 @@ export class Prueba6Page {
     this.storage.get('pruebaIni').then((val)=>{
       prIni=val;
         this.storage.get('pruebaAct').then((val2)=>{
-          prAct=val2;
+        prAct=val2;
 
 
-	  this.storage.get('fin').then((val3)=>{
-      	    if(val3!=null){
-	      this.storage.set('prueba6res',"ok");
-              this.storage.set('prueba6Ini',"ok");
-      	    }else{
-    	      if(prIni<=prAct&&prIni<=6&&6<prAct){
-      	        this.storage.set('prueba6Ini',"ok");
-      	        this.storage.set('prueba6res',"ok");
-    	      }else if(prAct<prIni&&(6<prAct||6>=prIni)){
-     	        this.storage.set('prueba6res',"ok");
-      	        this.storage.set('prueba6Ini',"ok");
-    	      }
-	    }
-
-    	    this.storage.get('prueba6Ini').then((val)=>{
-      	      if(val==null){
-                document.getElementById("inicio").style.display="inline";
-              	document.getElementById("contenido").style.display="none";
-	      	document.getElementById("desafio").style.display="none";
-      	      }else{
-                document.getElementById("inicio").style.display="none";
-	
-		this.storage.get('prueba6res').then((val)=>{
-              	  if(val==null){
-                    document.getElementById("desafio").style.display="inline";
-            	    document.getElementById("contenido").style.display="none";
-	    	    document.getElementById("descrReto").innerHTML=this.descripcion;
-            	    document.getElementById("error").style.display="none";
-       	      	  }else{
-                    document.getElementById("contenido").style.display="inline";
-		    document.getElementById("desafio").style.display="none";
-	    	    document.getElementById("correcto").style.display="none";
-              	  }
-            	});
-      	      }
-    	    });
-    	  });
-        });
+	this.storage.get('fin').then((val3)=>{
+      	  if(val3!=null){
+	    this.storage.set('prueba6res',"ok");
+            this.storage.set('prueba6Ini',"ok");
+  	    this.verSitio();
+      	  }else{
+    	    if(prIni<=prAct&&prIni<=6&&6<prAct){
+      	      this.storage.set('prueba6Ini',"ok");
+      	      this.storage.set('prueba6res',"ok");
+  	      this.verSitio();
+    	    }else if(prAct<prIni&&(6<prAct||6>=prIni)){
+     	      this.storage.set('prueba6res',"ok");
+      	      this.storage.set('prueba6Ini',"ok");
+  	      this.verSitio();
+    	    }else
+	      this.verElementos();
+	  }
+    	});
       });
+    });
   }
 
+  verSitio(){
+    document.getElementById("contenido").style.display="inline";
+    document.getElementById("desafio").style.display="none";
+    document.getElementById("correcto").style.display="none";
+  }
+
+  verElementos(){
+    this.storage.get('prueba6Ini').then((val)=>{
+      if(val==null){
+        document.getElementById("inicio").style.display="inline";
+        document.getElementById("contenido").style.display="none";
+	document.getElementById("desafio").style.display="none";
+      }else{
+        document.getElementById("inicio").style.display="none";
+	this.storage.get('prueba6res').then((val)=>{
+          if(val==null){
+            document.getElementById("desafio").style.display="inline";
+            document.getElementById("contenido").style.display="none";
+	    document.getElementById("descrReto").innerHTML=this.descripcion;
+            document.getElementById("error").style.display="none";
+       	  }else{
+            document.getElementById("contenido").style.display="inline";
+	    document.getElementById("desafio").style.display="none";
+	    document.getElementById("correcto").style.display="none";
+          }
+        });
+      }
+    });
+  }
 
   consulta(){
     this.http.get('http://miguelmerelo.es/ieeeday/respuesta.php?respuesta='+this.respuesta+'&equipo='+this.equipo+'&clave='+this.clave+'&prueba='+this.nMision,{},{}).then(data => {
