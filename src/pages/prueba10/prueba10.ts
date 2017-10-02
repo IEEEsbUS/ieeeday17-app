@@ -60,10 +60,10 @@ export class Prueba10Page {
 	      this.storage.set('prueba10res',"ok");
               this.storage.set('prueba10Ini',"ok");
       	    }else{
-    	      if(prIni>prAct&&(10<prAct||10>=prIni)){
+    	      /*if(prIni>prAct&&(10<prAct||10>=prIni)){
      	        this.storage.set('prueba10res',"ok");
       	        this.storage.set('prueba10Ini',"ok");
-    	      }
+    	      }*/
 	    }
 
     	    this.storage.get('prueba10Ini').then((val)=>{
