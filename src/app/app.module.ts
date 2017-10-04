@@ -18,6 +18,7 @@ import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
 import { RestaurantesPage } from './../pages/restaurantes/restaurantes';
+import { RestaurantesDetallePage } from './../pages/restaurantes-detalle/restaurantes-detalle';
 import { RankingPage } from '../pages/ranking/ranking';
 import { Prueba1Page } from '../pages/prueba1/prueba1';
 import { Prueba2Page } from '../pages/prueba2/prueba2';
@@ -47,6 +48,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     QueesPage,
     GymkhanaPage,
     RestaurantesPage,
+    RestaurantesDetallePage,
     RankingPage,
     Prueba1Page,
     Prueba2Page,
@@ -78,6 +80,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     QueesPage,
     GymkhanaPage,
     RestaurantesPage,
+    RestaurantesDetallePage,
     RankingPage,
     Prueba1Page,
     Prueba2Page,

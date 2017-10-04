@@ -15,6 +15,34 @@
 
 
 
-<ion-content padding>
+<ion-content class="card-background-page">
+  <div class = "list">
+      <ion-item-divider>
+        <h1 class="title">Desayunos</h1>
+      </ion-item-divider>
+
+      <ion-card (click)="newPub(Cacharreria)">
+          <div class="card-title item">
+            <img src="assets/images/restaurantes/cacharreria.jpeg"/>              
+            <div>La Cacharrería</div>
+          </div>
+        </ion-card>
+
+      <ion-item-divider>
+        <h1 class="title">Copas</h1>
+      </ion-item-divider>
+
+      <ion-card (click)="newPub(Alameda)">
+          <div class="card-title item">
+            <img src="assets/images/restaurantes/alameda.jpg"/>              
+            <div>Alameda de Hércules</div>
+          </div>
+        </ion-card>
+   </div>
+
+
+
+
+    
 
 </ion-content>

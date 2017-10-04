@@ -1,3 +1,37 @@
 page-restaurantes {
 
+    .card-background-page {
+	.texto{
+	    padding:1% 5% 2% 5%;
+	    text-align:center;
+	    font-size:0.9em;
+	    color:grey;
+	}
+	
+	ion-card {
+	    position: relative;
+	    text-align: center;
+	    width:90%;
+	    margin-left:auto;
+	    margin-right:auto;
+	    max-width:400px;
+	    padding:10%;
+	}
+	
+	.card-title {
+	    position: absolute;
+	    top: 5%;
+	    font-size: 2.0em;
+	    left:7%;
+	    width: 86%;
+	    height: 100%;
+	    font-weight: bold;
+	    color: #fff;
+	    border-radius:5px;
+	    background: rgba(0, 0, 0, 0.5)
+    }
+    h1 {
+        align-self: center;
+    }
+    }
 }
