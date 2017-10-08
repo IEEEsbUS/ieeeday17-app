@@ -1,37 +1,111 @@
 page-restaurantes {
-
     .card-background-page {
-	.texto{
-	    padding:1% 5% 2% 5%;
-	    text-align:center;
-	    font-size:0.9em;
-	    color:grey;
-	}
+		.texto{
+			padding:1% 5% 2% 5%;
+			text-align:center;
+			font-size:0.9em;
+			color:grey;
+		}
+		
+		ion-card {
+			position: relative;
+			text-align: center;
+			width:80%;
+			margin-left:auto;
+			margin-right:auto;
+			max-width:400px;
+			padding:2%;
+		}
+		
+		ion-card img{
+			max-height: 180px;			
+		}
+
+		.card-title {
+			position: absolute;
+			top: 40%;
+			font-size: 2.0em;
+			left:7%;
+			width: 86%;
+			height: 20%;
+			font-weight: bold;
+			color: #fff;
+			border-radius:5px;
+			background: rgba(0, 0, 0, 0.5)
+		}
 	
-	ion-card {
-	    position: relative;
-	    text-align: center;
-	    width:90%;
-	    margin-left:auto;
-	    margin-right:auto;
-	    max-width:400px;
-	    padding:10%;
-	}
+		.card-title div{
+			height:10%;
+		}
+
+		}
 	
-	.card-title {
-	    position: absolute;
-	    top: 5%;
-	    font-size: 2.0em;
-	    left:7%;
-	    width: 86%;
-	    height: 100%;
-	    font-weight: bold;
-	    color: #fff;
-	    border-radius:5px;
-	    background: rgba(0, 0, 0, 0.5)
-    }
-    h1 {
-        align-self: center;
-    }
-    }
+		@-webkit-keyframes cuadro{
+		0% {-webkit-transform: translateY(-300px)}
+		100% {-webkit-transform: translateY(0px);}
+		}
+		#cuadro{
+		z-index:5;
+		display:none;
+		position:absolute;
+		margin:5%;
+		width:90%;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-duration: 500ms;
+		animation-duration: 500ms;
+		}
+		#front{
+		position:absolute;
+		width:100%;
+		z-index:5;
+		}
+		#front img{
+		display:block;
+		margin:auto;
+		padding:5px;
+		}
+		#back{
+		position:absolute;
+		width:100%;
+		z-index:4;
+		display:inline;
+		}
+		#back img{
+		display:block;
+		margin:auto;
+		padding:5px;;
+		}
+		#back2{
+		position:absolute;
+		width:100%;
+		z-index:3;
+		}
+		#back2 span{
+		display:block;
+		margin:auto;
+		background-color:rgba(24,189,96, 0.8);
+		border-radius:100px;
+		border:solid 2px black;
+		width:150px;
+		height:150px;
+		}
+		#back2 p{
+		text-align:center;
+		display:block;
+		margin:auto;
+		margin-top:5px;
+		color:white;
+		font-size:x-large;
+		font-family:Impact;
+		text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+		background-color:rgba(232, 154, 20,0.9);
+		padding:5px;
+		max-width:320px;
+		border-radius:5px;
+		}
 }
