@@ -33,7 +33,7 @@ export class AgendaPage {
     }
     else if(dia==3){
    	let alert = this.alertCtrl.create({
-	    title: 'Viernes 18:00',
+	    title: 'Viernes 17:00',
 	    subTitle: '<b>Entrega de reconocimiento a miembros</b>',
 	    buttons: ['OK']
     	});
