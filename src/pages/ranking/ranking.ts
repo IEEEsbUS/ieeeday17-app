@@ -121,6 +121,8 @@ export class RankingPage {
     }
     if(this.finalizado==nEquipos&&this.posicion==1)
       this.sonido();
+    document.getElementById("error").innerHTML="this.posicion="+this.posicion+" || this.finalizado="+this.finalizado+" ||nEquipos="+nEquipos;
+    document.getElementById("error").style.display="inline";
   }
 
   reproducir(){

@@ -142,15 +142,15 @@ export class Prueba1Page {
   empezar(){
     this.http.get('http://miguelmerelo.es/ieeeday/iniciar.php?inicio=si&equipo='+this.equipo+'&clave='+this.clave+'&prueba='+this.nMision,{},{}).then(data => {
       var descr=data.data.split('}')[0].split(':')[1].split("\"")[1];
-      descr=this.traducir(descr);
+      var corregido=this.traducir(descr);
       this.storage.set("prueba1def",descr);
       this.storage.set('prueba1Ini',"si");
-      this.descripcion=descr;
+      this.descripcion=corregido;
 
       document.getElementById("desafio").style.display="inline";
       document.getElementById("inicio").style.display="none";
       document.getElementById("contenido").style.display="none";
-      document.getElementById("descrReto").innerHTML=this.descripcion;
+      document.getElementById("descrReto").innerHTML=descr+" "+this.descripcion;
       document.getElementById("error").style.display="none";
     })
     .catch(error => {

@@ -25,7 +25,7 @@ export class AgendaPage {
     }
     else if(dia==2){
    	let alert = this.alertCtrl.create({
-	    title: 'Viernes 17:00',
+	    title: 'Viernes 16:15',
 	    subTitle: '<b>Charla sobre Industry Networking</b><img src="assets/images/andreasNEUMEIER.jpg"/><b>Andreas Neumeier</b><br/>Manager  para la estrategia de IoT en OSRAM/Sylvania',
 	    buttons: ['OK']
     	});
@@ -34,23 +34,31 @@ export class AgendaPage {
     else if(dia==3){
    	let alert = this.alertCtrl.create({
 	    title: 'Viernes 18:00',
-	    subTitle: '<b>Reconocimiento a miembros</b>',
+	    subTitle: '<b>Entrega de reconocimiento a miembros</b>',
 	    buttons: ['OK']
     	});
 	alert.present();
     }
     else if(dia==4){
    	let alert = this.alertCtrl.create({
-	    title: 'Viernes 19:00',
-	    subTitle: '<b>Panel debate sobre la industria en España</b>',
+	    title: 'Viernes 18:30',
+	    subTitle: '<b>Panel debate sobre la industria en España</b><img height="260px" style="width:145px" src="assets/images/paneldebate.png"/>',
 	    buttons: ['OK']
     	});
 	alert.present();
     }
     else if(dia==5){
    	let alert = this.alertCtrl.create({
-	    title: 'Viernes 19:45',
+	    title: 'Viernes 18:00',
 	    subTitle: '<b>Entrega de premios de la Sección Española</b>',
+	    buttons: ['OK']
+    	});
+	alert.present();
+    }
+    else if(dia==6){
+   	let alert = this.alertCtrl.create({
+	    title: 'Viernes 19:30',
+	    subTitle: '<b>El valor de IEEE en España y Europa</b><br/>Por Federico Peña',
 	    buttons: ['OK']
     	});
 	alert.present();
@@ -65,7 +73,7 @@ export class AgendaPage {
     }
     else if(dia==11){
     	let alert = this.alertCtrl.create({
-	    title: 'Sábado 11:00',
+	    title: 'Sábado 10:00',
 	    subTitle: '<b>Gymkhana</b><br/><br/>Gymkhana en la que conoceremos Sevilla.<br/><br/>Se cita a todos los participantes en <b>Plaza Nueva</b>',
 	    buttons: ['OK']
     	});
@@ -73,7 +81,7 @@ export class AgendaPage {
     }
     else if(dia==12){
     	let alert = this.alertCtrl.create({
-	    title: 'Sábado 16:00',
+	    title: 'Sábado 15:30',
 	    subTitle: '<b>Jornadas de formación para las ramas de estudiantes</b><br/><br/>Exclusivo para miembros de IEEE',
 	    buttons: ['OK']
     	});
@@ -81,7 +89,7 @@ export class AgendaPage {
     }
     else if(dia==13){
     	let alert = this.alertCtrl.create({
-	    title: 'Sábado 16:00',
+	    title: 'Sábado 18:00',
 	    subTitle: '<img src="assets/images/YPTourSevilla.png"/><br/><b>Mesa redonda & Networking con jóvenes profesionales</b><br/>Nos contarán su experiencia en el salto de la universidad al mundo laboral',
 	    buttons: ['OK']
     	});

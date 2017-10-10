@@ -32,6 +32,8 @@ export class GymkhanaPage {
   datos=[];
   todo={equipo:'',pass:''};
 
+  public plazaNueva="https://www.google.es/maps/place/Plaza+Nueva/@37.388644,-5.9957262,19z/data=!4m5!3m4!1s0x0:0xf46efc9d4fb3b510!8m2!3d37.3885136!4d-5.9955753";
+
   clasificacion=RankingPage;
 
   prueba1=Prueba1Page;
@@ -243,5 +245,9 @@ export class GymkhanaPage {
 
   cerrarReglas(){
     document.getElementById("container").style.display="none";
+  }
+
+  openURL(url){
+    window.open(url,'_system');
   }
 }
