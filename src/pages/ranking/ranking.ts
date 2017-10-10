@@ -110,8 +110,8 @@ export class RankingPage {
       td.innerHTML=""+pos;
       td.style.width="10%";
       tr.appendChild(td);
-      if(this.equipo.localeCompare(tabla[i][0])==0)
-	this.posicion=i+1;
+      if(this.equipo.toLowerCase().localeCompare(tabla[i][0].toLowerCase())==0)
+	this.posicion=pos;
       for (var j = 0; j < 3; j++) {
         td = document.createElement('td');
         td.innerHTML=tabla[i][j];
@@ -121,7 +121,7 @@ export class RankingPage {
     }
     if(this.finalizado==nEquipos&&this.posicion==1)
       this.sonido();
-    document.getElementById("error").innerHTML="this.posicion="+this.posicion+" || this.finalizado="+this.finalizado+" ||nEquipos="+nEquipos;
+    document.getElementById("error").innerHTML="equipo:"+this.equipo+" this.posicion="+this.posicion+" || this.finalizado="+this.finalizado+" ||nEquipos="+nEquipos;
     document.getElementById("error").style.display="inline";
   }
 

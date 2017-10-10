@@ -141,9 +141,9 @@ export class Prueba4Page {
   empezar(){
     this.http.get('http://miguelmerelo.es/ieeeday/iniciar.php?inicio=si&equipo='+this.equipo+'&clave='+this.clave+'&prueba='+this.nMision,{},{}).then(data => {
       var descr=data.data.split('}')[0].split(':')[1].split("\"")[1];
-      this.storage.set("prueba4def",descr);
-      this.storage.set('prueba4Ini',"si");
       this.descripcion=this.traducir(descr);
+      this.storage.set("prueba4def",this.descripcion);
+      this.storage.set('prueba4Ini',"si");
 
       document.getElementById("desafio").style.display="inline";
       document.getElementById("inicio").style.display="none";
