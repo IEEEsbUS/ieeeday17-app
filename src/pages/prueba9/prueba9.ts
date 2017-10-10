@@ -141,10 +141,9 @@ export class Prueba9Page {
   empezar(){
     this.http.get('http://miguelmerelo.es/ieeeday/iniciar.php?inicio=si&equipo='+this.equipo+'&clave='+this.clave+'&prueba='+this.nMision,{},{}).then(data => {
       var descr=data.data.split('}')[0].split(':')[1].split("\"")[1];
-      descr=this.traducir(descr);
       this.storage.set("prueba9def",descr);
       this.storage.set('prueba9Ini',"si");
-      this.descripcion=descr;
+      this.descripcion=this.traducir(descr);
 
       document.getElementById("desafio").style.display="inline";
       document.getElementById("inicio").style.display="none";
@@ -168,7 +167,7 @@ export class Prueba9Page {
   }
 
   traducir(frase){
-    var caracWeb=['\u00e1', '\u00c1', '\u00e9', '\u00c9', '\u00ed', '\u00cd', '\u00f3', '\u00d3', '\u00fa', '\u00da', '\u00fc', '\u00dc', '\u00f1', '\u00d1', '\u00e7', '\u00c7', '\u00bf', '\u00a1'];
+    var caracWeb=['u00e1', 'u00c1', 'u00e9', 'u00c9', 'u00ed', 'u00cd', 'u00f3', 'u00d3', 'u00fa', 'u00da', 'u00fc', 'u00dc', 'u00f1', 'u00d1', 'u00e7', 'u00c7', 'u00bf', 'u00a1'];
     var caracOK=['á','Á','é','É','í','Í','ó','Ó','ú','Ú','ü','Ü','ñ','Ñ','ç','Ç','¿','¡'];
     var i=0;
     for(;i<caracWeb.length;i++)
