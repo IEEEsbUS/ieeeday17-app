@@ -170,8 +170,8 @@ export class Prueba1Page {
   }
 
   traducir(frase){
-    var caracWeb=['\u00e1', '\u00c1', '\u00e9', '\u00c9', '\u00ed', '\u00cd', '\u00f3', '\u00d3', '\u00fa', '\u00da', '\u00fc', '\u00dc', '\u00f1', '\u00d1', '\u00e7', '\u00c7', '\u00bf', '\u00a1'];
-    var caracOK=['á','Á','é','É','í','Í','ó','Ó','ú','Ú','ü','Ü','ñ','Ñ','ç','Ç','¿','¡'];
+    var caracWeb=['\u00e1', '\u00c1', '\u00e9', '\u00c9', '\u00ed', '\u00cd', 'u00f3', '\u00d3', '\u00fa', '\u00da', '\u00fc', '\u00dc', '\u00f1', '\u00d1', '\u00e7', '\u00c7', '\u00bf', '\u00a1','a'];
+    var caracOK=['á','Á','é','É','í','Í','ó','Ó','ú','Ú','ü','Ü','ñ','Ñ','ç','Ç','¿','¡','A'];
     var i=0;
     for(;i<caracWeb.length;i++)
       frase=frase.replace(caracWeb[i],caracOK[i]);
