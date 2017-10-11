@@ -25,7 +25,7 @@ export class RankingPage {
     this.nativeAudio.preloadSimple('alerta', 'assets/sounds/alerta.mp3');
   }
 
-  ionWillEnter(){
+  ionViewDidLoad() {
     this.storage.get('equipo').then((val) =>{
       if(val==null){
       
@@ -33,11 +33,8 @@ export class RankingPage {
         console.log('equipo ',val);
 	this.equipo=val;
       }
+      this.consultar();
     });
-  }
-
-  ionViewDidLoad() {
-    this.consultar();
   }
 
   refrescar(){
@@ -55,7 +52,7 @@ export class RankingPage {
   consultar(){
     this.http.get('http://miguelmerelo.es/ieeeday/ranking.php',{},{}).then(data => {
       this.rellenaTabla(data.data);
-      //document.getElementById("error").innerHTML="";
+      document.getElementById("error").innerHTML="";
     })
     .catch(error => {
        document.getElementById("error").innerHTML="Error de conexión";
@@ -121,7 +118,6 @@ export class RankingPage {
     }
     if(this.finalizado==nEquipos&&this.posicion==1)
       this.sonido();
-    document.getElementById("error").innerHTML="equipo:"+this.equipo+" this.posicion="+this.posicion+" || this.finalizado="+this.finalizado+" ||nEquipos="+nEquipos;
     document.getElementById("error").style.display="inline";
   }
 
