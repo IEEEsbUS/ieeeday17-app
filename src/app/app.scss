@@ -16,18 +16,26 @@
 // automatically applied to the <body> element in the app.
 
 .toolbar-title{
-	color:#006da4;
-	align:center;
+    color:#006da4;
+    align:center;
 }
 
 .toolbar button{
-	color:#006da4;
+    color:#006da4;
 }
 
 .toolbar-background{
-	background-color:#e2e2e2;
+    background-color:#e2e2e2;
 }
 
 ion-menu ion-icon{
-	color:white;
+    color:white;
+}
+
+#formacion{
+    background-color:rgba(56,126,245,0.1);
+    padding:10px;
+    border-radius:10px;
+    color:#7c7c7c;
+    text-align:center;
 }
