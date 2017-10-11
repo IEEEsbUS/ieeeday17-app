@@ -55,6 +55,7 @@ page-ranking {
 	animation-fill-mode: forwards;
 	-webkit-animation-duration: 500ms;
 	animation-duration: 500ms;
+	z-index:1;
     }
     #front{
 	position:absolute;
@@ -64,7 +65,7 @@ page-ranking {
     #front img{
 	display:block;
 	margin:auto;
-	padding:5px;
+	padding:10px;
     }
     #back{
 	position:absolute;
@@ -75,7 +76,7 @@ page-ranking {
     #back img{
 	display:block;
 	margin:auto;
-	padding:5px;;
+	padding:10px;;
     }
     #back2{
 	position:absolute;

@@ -42,7 +42,7 @@ export class AgendaPage {
     else if(dia==4){
    	let alert = this.alertCtrl.create({
 	    title: 'Viernes 18:30',
-	    subTitle: '<b>Panel debate sobre la industria en España</b><img height="260px" style="width:145px" src="assets/images/paneldebate.png"/>',
+	    subTitle: '<b>Panel debate sobre la industria en España</b><br/><img src="assets/images/paneldebate.png"/>',
 	    buttons: ['OK']
     	});
 	alert.present();
