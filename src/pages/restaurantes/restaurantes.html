@@ -9,7 +9,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Restaurantes</ion-title>
+    <ion-title>Hostelería</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -100,17 +100,85 @@
           </div>
         </ion-card>
 
+  <ion-card (click)="newPub(Tragaldabas)">
+          <img src="{{Tragaldabas.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{Tragaldabas.title}}</div>
+          </div>
+        </ion-card>
+
+  <ion-card (click)="newPub(Gaia)">
+          <img src="{{Gaia.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{Gaia.title}}</div>
+          </div>
+        </ion-card>
+
       </div>
     </ion-item>
 
     <ion-item [ngClass]="{active: isGroupShown(2)}">
+      
+            <ion-item-divider text-wrap (click)="toggleGroup(2)">
+              <h1 class="title">Tapas</h1>
+              <ion-icon item-right [name]="isGroupShown(0) ? 'arrow-down' : 'arrow-forward'"></ion-icon>        
+            </ion-item-divider>
+      
+            <div *ngIf="isGroupShown(2)">
+      
+              <ion-card (click)="newPub(Naciones)">
+                <img src="{{Naciones.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{Naciones.title}}</div>
+                </div>
+              </ion-card>
+              
+              <ion-card (click)="newPub(Alameda)">
+                <img src="{{Alameda.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{Alameda.title}}</div>
+                </div>
+              </ion-card>
+              
+              <ion-card (click)="newPub(Almiranta)">
+                <img src="{{Almiranta.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{Almiranta.title}}</div>
+                </div>
+              </ion-card>
 
-      <ion-item-divider text-wrap (click)="toggleGroup(2)">
+              <ion-card (click)="newPub(SanEloy)">
+                <img src="{{SanEloy.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{SanEloy.title}}</div>
+                </div>
+              </ion-card>
+
+              <ion-card (click)="newPub(Rock)">
+                <img src="{{Rock.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{Rock.title}}</div>
+                </div>
+              </ion-card>
+              
+              <ion-card (click)="newPub(Ruperto)">
+                <img src="{{Ruperto.imagen}}" />
+                <div class="card-title item">
+                  <div class="card-subtitle">{{Ruperto.title}}</div>
+                </div>
+              </ion-card>
+              
+            </div>
+          </ion-item>
+
+    <ion-item [ngClass]="{active: isGroupShown(3)}">
+
+      <ion-item-divider text-wrap (click)="toggleGroup(3)">
         <h1 class="title">Copas</h1>
         <ion-icon item-right [name]="isGroupShown(2) ? 'arrow-down' : 'arrow-forward'"></ion-icon>        
       </ion-item-divider>
 
-      <div *ngIf="isGroupShown(2)">
+      <div *ngIf="isGroupShown(3)">
 
         <ion-card (click)="newPub(Alameda)">
           <img src="{{Alameda.imagen}}" />
@@ -133,6 +201,13 @@
                 <div class="card-subtitle">{{Alfalfa.title}}</div>
               </div>
             </ion-card>    
+
+            <ion-card (click)="newPub(Julio)">
+              <img src="{{Julio.imagen}}" />
+              <div class="card-title item">
+                <div class="card-subtitle">{{Julio.title}}</div>
+              </div>
+            </ion-card> 
 
       </div>
     </ion-item>
