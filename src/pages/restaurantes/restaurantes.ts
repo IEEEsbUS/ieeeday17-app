@@ -17,9 +17,17 @@ import { RestaurantesDetallePage } from './../restaurantes-detalle/restaurantes-
   templateUrl: 'restaurantes.html',
 })
 export class RestaurantesPage {
-  Alameda={title:"Zona Alameda",imagen:"assets/images/restaurantes/alameda.jpg",descripcion:"Descripción zona Alameda",mapURL:"https://maps.google.com/?cid=17427692181526125583"};
-  Cacharreria={title:"Cacharreria",imagen:"assets/images/restaurantes/cacharreria.jpeg",descripcion:"Descripción Cacharrería",mapURL:"https://maps.google.com/?cid=13606624606783574085"};
+  Cacharreria={title:"Cacharreria Desayunos",imagen:"assets/images/restaurantes/cacharreria.jpeg",descripcion:"Acogedor café decorado con objetos singulares que sirve cócteles, desayunos dulces y salados y tartas caseras",mapURL:"https://maps.google.com/?cid=13606624606783574085"};
+  Gallo={title:"Gallo Rojo",imagen:"assets/images/restaurantes/gallo_rojo.jpg",descripcion:"Al mismo tiempo es una cervecería, una galería de arte, un espacio para conciertos o una factoría de creación, como ellos mismos se autodenominan",mapURL:"https://goo.gl/maps/yyZj9QrWChN2"};
+  RedHouse={title:"Café Red House",imagen:"assets/images/restaurantes/redhouse.jpg",descripcion:"Bar, cafetería, galería de arte, tienda de decoración y objetos vintage y espacio cultural",mapURL:"https://goo.gl/maps/BfY8w5fGcJC2"};
+  Viajero={title:"El Viajero Sedentario",imagen:"assets/images/restaurantes/el-viajero-sedentario.jpg",descripcion:"Librería café situada en la Alameda de Hércules, en la que puedes tomar un té, un rico café de estilo italiano o un zumo de frutas frescas al mismo tiempo que disfrutas leyendo uno de los libros de su fondo bibliográfico",mapURL:"https://goo.gl/maps/gk3q7fWs26S2"};
+  EBio={title:"Heladería Puro E Bio",imagen:"assets/images/restaurantes/ebio.jpg",descripcion:"Helados artesanales y de elaboración diaria, hechos con materias primas bio y ecológicas",mapURL:"https://goo.gl/maps/Z9EHbzhzTZo"};
   
+  Alameda={title:"Zona Alameda",imagen:"assets/images/restaurantes/alameda.jpg",descripcion:"Zona de bares de tapas, con mucha variedad de pubs donde tomas una copa y con salas para ir a bailar. En este barrio tienes al alcance de la mano todo lo que puedes necesitar desde la cena, hasta la copa y el baile",mapURL:"https://goo.gl/maps/T8YJJ86f3Yy"};
+  Bombay={title:"Kiosko Bombay",imagen:"assets/images/restaurantes/kiosko_bombay.jpeg",descripcion:"Buena música, un ambiente de categoría en un entorno turístico maravilloso y unos cócteles de primera",mapURL:"https://goo.gl/maps/8AR3ke6b3ex"};
+  Alfalfa={title:"Zona Alfalfa",imagen:"assets/images/restaurantes/alfalfa.jpg",descripcion:"Principal destino de estudiantes erasmus donde se encuentran pequeños bares de copas con mucha personalidad en los que se beben copas tanto dentro como fuera de los establecimientos. Entre los más populares de la zona está el Sopa de Ganso o el Berlín, sitios con buena música y ambiente para disfrutar de la noche sevillana",mapURL:"https://goo.gl/maps/qxDAvwMZnRE2"};
+  
+
   shownGroup = null;
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
