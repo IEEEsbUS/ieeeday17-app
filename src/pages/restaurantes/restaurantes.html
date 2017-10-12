@@ -13,36 +13,47 @@
   </ion-navbar>
 </ion-header>
 
-
-
 <ion-content class="card-background-page">
-  <div class = "list">
-      <ion-item-divider>
+
+  <ion-list>
+    <ion-item [ngClass]="{active: isGroupShown(0)}">
+
+      <ion-item-divider text-wrap (click)="toggleGroup(0)">
         <h1 class="title">Desayunos</h1>
       </ion-item-divider>
 
-      <ion-card (click)="newPub(Cacharreria)">
-          <img src="assets/images/restaurantes/cacharreria.jpeg"/>                      
+      <div *ngIf="isGroupShown(0)">
+
+        <ion-card (click)="newPub(Cacharreria)">
+          <img src="assets/images/restaurantes/cacharreria.jpeg" />
           <div class="card-title item">
             <div class="card-subtitle">La Cacharrería</div>
           </div>
         </ion-card>
 
-      <ion-item-divider>
+      </div>
+    </ion-item>
+
+    <ion-item [ngClass]="{active: isGroupShown(1)}">
+
+      <ion-item-divider text-wrap (click)="toggleGroup(1)">
         <h1 class="title">Copas</h1>
       </ion-item-divider>
 
-      <ion-card (click)="newPub(Alameda)">
-          <img src="assets/images/restaurantes/alameda.jpg"/>                       
+      <div *ngIf="isGroupShown(1)">
+
+        <ion-card (click)="newPub(Alameda)">
+          <img src="assets/images/restaurantes/alameda.jpg" />
           <div class="card-title item">
-            <div class="card-subtitle">Alameda de Hércules</div>            
+            <div class="card-subtitle">Alameda de Hércules</div>
           </div>
         </ion-card>
-   </div>
+
+      </div>
+    </ion-item>
+  </ion-list>
 
 
 
-
-    
 
 </ion-content>

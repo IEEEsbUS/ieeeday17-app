@@ -20,6 +20,7 @@ export class RestaurantesPage {
   Alameda={title:"Zona Alameda",imagen:"assets/images/restaurantes/alameda.jpg",descripcion:"Descripción zona Alameda",mapURL:"https://maps.google.com/?cid=17427692181526125583"};
   Cacharreria={title:"Cacharreria",imagen:"assets/images/restaurantes/cacharreria.jpeg",descripcion:"Descripción Cacharrería",mapURL:"https://maps.google.com/?cid=13606624606783574085"};
   
+  shownGroup = null;
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -31,5 +32,17 @@ export class RestaurantesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RestaurantesPage');
   }
+
+  toggleGroup(group) {
+    if (this.isGroupShown(group)) {
+        this.shownGroup = null;
+    } else {
+        this.shownGroup = group;
+    }
+  };
+
+  isGroupShown(group) {
+      return this.shownGroup === group;
+  };
 
 }
