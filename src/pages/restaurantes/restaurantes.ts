@@ -26,7 +26,11 @@ export class RestaurantesPage {
   Alameda={title:"Zona Alameda",imagen:"assets/images/restaurantes/alameda.jpg",descripcion:"Zona de bares de tapas, con mucha variedad de pubs donde tomas una copa y con salas para ir a bailar. En este barrio tienes al alcance de la mano todo lo que puedes necesitar desde la cena, hasta la copa y el baile",mapURL:"https://goo.gl/maps/T8YJJ86f3Yy"};
   Bombay={title:"Kiosko Bombay",imagen:"assets/images/restaurantes/kiosko_bombay.jpeg",descripcion:"Buena música, un ambiente de categoría en un entorno turístico maravilloso y unos cócteles de primera",mapURL:"https://goo.gl/maps/8AR3ke6b3ex"};
   Alfalfa={title:"Zona Alfalfa",imagen:"assets/images/restaurantes/alfalfa.jpg",descripcion:"Principal destino de estudiantes erasmus donde se encuentran pequeños bares de copas con mucha personalidad en los que se beben copas tanto dentro como fuera de los establecimientos. Entre los más populares de la zona está el Sopa de Ganso o el Berlín, sitios con buena música y ambiente para disfrutar de la noche sevillana",mapURL:"https://goo.gl/maps/qxDAvwMZnRE2"};
-  
+
+  DuoTapas={title:"Dúo Tapas",imagen:"assets/images/restaurantes/duotapas.png",descripcion:"Muy buena comida, barato. Con 2-3 tapas comes",mapURL:"https://goo.gl/maps/NGV8swz4cAs"};
+  MesonSerranito={title:"Mesón Serranito",imagen:"assets/images/restaurantes/mesonserranito.jpg",descripcion:"Bocatas de jamón serrano y tapas variadas en una taberna decorada con bustos de toro y carteles de corridas",mapURL:"https://goo.gl/maps/pN3sHeKKiiH2"};
+  Coloniales1={title:"Taberna Coloniales. Setas",imagen:"assets/images/restaurantes/coloniales.jpg",descripcion:"Tapas y recetas españolas en un concurrido mesón andaluz con azulejos pintados, alacenas de madera y terraza",mapURL:"https://goo.gl/maps/jpP2XcLuX3E2"};
+  Coloniales2={title:"Taberna Coloniales. Catedral",imagen:"assets/images/restaurantes/coloniales.jpg",descripcion:"Tapas y recetas españolas en un concurrido mesón andaluz con azulejos pintados, alacenas de madera y terraza",mapURL:"https://goo.gl/maps/hEnUCdEKNMx"};
 
   shownGroup = null;
   

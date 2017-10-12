@@ -19,7 +19,7 @@
     <ion-item [ngClass]="{active: isGroupShown(0)}">
 
       <ion-item-divider text-wrap (click)="toggleGroup(0)">
-        <h1 class="title">Desayunos</h1>
+        <h1 class="title">Desayunos / Meriendas</h1>
         <ion-icon item-right [name]="isGroupShown(0) ? 'arrow-down' : 'arrow-forward'"></ion-icon>        
       </ion-item-divider>
 
@@ -66,11 +66,51 @@
     <ion-item [ngClass]="{active: isGroupShown(1)}">
 
       <ion-item-divider text-wrap (click)="toggleGroup(1)">
-        <h1 class="title">Copas</h1>
+        <h1 class="title">Restaurantes</h1>
         <ion-icon item-right [name]="isGroupShown(1) ? 'arrow-down' : 'arrow-forward'"></ion-icon>        
       </ion-item-divider>
 
       <div *ngIf="isGroupShown(1)">
+
+        <ion-card (click)="newPub(DuoTapas)">
+          <img src="{{DuoTapas.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{DuoTapas.title}}</div>
+          </div>
+        </ion-card>
+
+	<ion-card (click)="newPub(MesonSerranito)">
+          <img src="{{MesonSerranito.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{MesonSerranito.title}}</div>
+          </div>
+        </ion-card>
+
+	<ion-card (click)="newPub(Coloniales1)">
+          <img src="{{Coloniales1.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{Coloniales1.title}}</div>
+          </div>
+        </ion-card>
+
+	<ion-card (click)="newPub(Coloniales2)">
+          <img src="{{Coloniales2.imagen}}" />
+          <div class="card-title item">
+            <div class="card-subtitle">{{Coloniales2.title}}</div>
+          </div>
+        </ion-card>
+
+      </div>
+    </ion-item>
+
+    <ion-item [ngClass]="{active: isGroupShown(2)}">
+
+      <ion-item-divider text-wrap (click)="toggleGroup(2)">
+        <h1 class="title">Copas</h1>
+        <ion-icon item-right [name]="isGroupShown(2) ? 'arrow-down' : 'arrow-forward'"></ion-icon>        
+      </ion-item-divider>
+
+      <div *ngIf="isGroupShown(2)">
 
         <ion-card (click)="newPub(Alameda)">
           <img src="{{Alameda.imagen}}" />

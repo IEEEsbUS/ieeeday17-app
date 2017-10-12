@@ -34,8 +34,8 @@ export class MyApp {
       { title: 'Ramas', component: RamasIEEE},
       { title: 'Capitulos', component: CapitulosPage},
       { title: 'Young Professionals', component: YoungprofessionalsPage},
-      { title: 'Gymkhana', component: GymkhanaPage},
-      { title: 'Restaurantes', component: RestaurantesPage}      
+      { title: 'Restaurantes', component: RestaurantesPage},
+      { title: 'Gymkhana', component: GymkhanaPage}     
     ];
 
   }
