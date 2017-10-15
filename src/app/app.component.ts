@@ -11,6 +11,7 @@ import { YoungprofessionalsPage } from '../pages/youngprofessionals/youngprofess
 import { QueesPage } from '../pages/quees/quees';
 import { PremiosPage } from '../pages/premios/premios';
 import { GymkhanaPage } from '../pages/gymkhana/gymkhana';
+import { RestaurantesPage } from './../pages/restaurantes/restaurantes';
 
 @Component({
   templateUrl: 'app.html'
@@ -33,7 +34,8 @@ export class MyApp {
       { title: 'Ramas', component: RamasIEEE},
       { title: 'Capitulos', component: CapitulosPage},
       { title: 'Young Professionals', component: YoungprofessionalsPage},
-      { title: 'Gymkhana', component: GymkhanaPage}
+      { title: 'Hostelería', component: RestaurantesPage},
+      { title: 'Gymkhana', component: GymkhanaPage}     
     ];
 
   }

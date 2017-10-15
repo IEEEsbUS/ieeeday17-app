@@ -25428,7 +25428,7 @@ page-quees #back2 p {
   color: white;
   font-size: x-large;
   font-family: Impact;
-  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color: rgba(232, 154, 20, 0.9);
   padding: 5px;
   max-width: 320px;
@@ -25608,7 +25608,7 @@ page-ramas-ieee #back2 p {
   color: white;
   font-size: x-large;
   font-family: Impact;
-  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color: rgba(232, 154, 20, 0.9);
   padding: 5px;
   max-width: 320px;
@@ -25736,11 +25736,72 @@ page-ranking #back2 p {
   color: white;
   font-size: x-large;
   font-family: Impact;
-  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color: rgba(232, 154, 20, 0.9);
   padding: 5px;
   max-width: 320px;
   border-radius: 5px;
+}
+
+page-restaurantes .card-background-page .texto {
+  padding: 1% 5% 2% 5%;
+  text-align: center;
+  font-size: 0.9em;
+  color: grey;
+}
+
+page-restaurantes .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  padding: 2%;
+}
+
+page-restaurantes .card-background-page ion-card img {
+  height: 150px;
+}
+
+page-restaurantes .card-background-page .card-title {
+  position: absolute;
+  top: 40%;
+  font-size: 1.5em;
+  left: 7%;
+  width: 86%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  white-space: normal;
+}
+
+page-restaurantes-detalle p {
+  text-align: center;
+  clear: both;
+}
+
+page-restaurantes-detalle .logo {
+  margin: auto;
+  width: 70%;
+  float: center;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  padding: 4%;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+page-restaurantes-detalle .logo img {
+  width: 100%;
+  max-width: 400px;
+}
+
+page-restaurantes-detalle span {
+  display: block;
+  text-align: center;
 }
 
 page-youngprofessionals ul {
@@ -25824,7 +25885,7 @@ page-youngprofessionals #back2 p {
   color: white;
   font-size: x-large;
   font-family: Impact;
-  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   background-color: rgba(232, 154, 20, 0.9);
   padding: 5px;
   max-width: 320px;
