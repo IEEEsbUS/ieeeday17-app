@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ieeeday955443" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>IEEEDay2017</name>
+<widget id="com.ionicframework.ieeeday955443" version="1.0.1" versionCode="10001" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>IEEEDay 2017</name>
   <description>APP desarrollada para IEEE DAY 2017 en Sevilla</description>
   <author email="ieeesbus@gmail.com" href="http://sites.ieee.org/sb-us/">IEEEsbUS</author>
   <content src="index.html"/>
